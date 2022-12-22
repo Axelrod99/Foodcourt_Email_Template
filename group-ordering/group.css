@@ -16,7 +16,6 @@ body {
     color: #E60A2B;
     font-size: larger;
     font-weight: bolder;
-    /* padding: 40px; */
 }
 
 .the_logo {
@@ -27,41 +26,14 @@ body {
     padding-bottom: 50px;
 }
 
-.icons{
-    border-bottom: 1px solid #EDEDED;
-}
-
-.two-columns{
+.container {
+    background-color: white;
     display: flex;
+    justify-content: center;
 
 }
 
-.first-column{
-    width: 85%;
-    vertical-align: top;
-    text-align: center;
-}
 
-.second-column{
-    width: 15%;
-    vertical-align: top;
-    text-align: center;
-}
-
-.img-div{
-    display: flex; 
-    flex-direction: column;
-    padding-top: 14px;
-}
-
-.content-div{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-
-/* footer */
 .icons {
     padding: 10px;
     display: flex;
@@ -70,10 +42,19 @@ body {
     border-bottom: 1px solid #EDEDED;
 }
 
-
 .flex {
     display: flex;
     gap: 20px;
+}
+
+button {
+    background-color: #E60A2B;
+    height: 40px;
+    width: 90%;
+    border-radius: 40px;
+    color: white;
+    border-color: #E60A2B;
+
 }
 
 .copyright {
@@ -82,10 +63,6 @@ body {
 
 }
 
-p{
-    font-size: 16px;
-}
-
-.header{
+span {
     font-weight: 600;
 }
