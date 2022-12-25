@@ -1,6 +1,8 @@
-body {
+.bodied {
     background-color: #FEF0F2;
     color: #1A1A1A;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
 }
 
 .BODY {
@@ -8,7 +10,7 @@ body {
     box-shadow: 0px 4px 25px #999999 ;
     /* filter: blur(6px); */
     border-radius: 10px;
-
+    font-weight: 400;
 }
 
 
@@ -73,7 +75,7 @@ button {
     display: flex;
     flex-direction: column;
     place-items: center;
-
+    text-align: center;
 }
 
 span {

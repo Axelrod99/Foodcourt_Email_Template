@@ -1,6 +1,10 @@
-body {
+.bodied {
     background-color: #FEF0F2;
     color: #1A1A1A;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: #595959;
+    font-weight: 400;
 }
 
 .BODY {
@@ -8,6 +12,7 @@ body {
     box-shadow: 0px 4px 25px #888;
     /* filter: blur(6px); */
     border-radius: 10px;
+
 
 }
 
@@ -68,9 +73,17 @@ button {
 .copyright {
     color: #595959;
     font-size: 14px;
-
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-bottom: 7px;
+    text-align: center;
 }
 
 span {
     font-weight: 600;
+}
+
+a{
+    color: #595959;
 }
