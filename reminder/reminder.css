@@ -29,6 +29,12 @@
 
 .first {
     padding-bottom: 50px;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .first {
+    width: 85%;}
 }
 
 .container {
@@ -57,8 +63,14 @@
 
 .flex {
     display: flex;
-    gap: 20px;
+    gap: 8px;
 }
+
+@media screen and (min-width: 500px) {
+    .flex {
+    gap: 20px;}
+}
+
 
 button {
     background-color: #E60A2B;
@@ -86,4 +98,8 @@ span {
 
 a{
     color: #595959;
+}
+
+p{
+    font-weight: 500;
 }

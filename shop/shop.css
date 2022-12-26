@@ -27,6 +27,12 @@
 
 .first {
     padding-bottom: 50px;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .first {
+    width: 85%;}
 }
 
 .container {
@@ -74,6 +80,7 @@ button {
     display: flex;
     flex-direction: column;
     place-items: center;
+    text-align: center;
 }
 
 span {

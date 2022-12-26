@@ -29,7 +29,15 @@
 
 .first {
     padding-bottom: 50px;
+    width: 100%;
+
 }
+
+@media screen and (min-width: 500px) {
+    .first {
+    width: 85%;}
+}
+
 
 .container {
     background-color: white;
@@ -57,7 +65,12 @@
 
 .flex {
     display: flex;
-    gap: 20px;
+    gap: 8px;
+}
+
+@media screen and (min-width: 500px) {
+    .flex {
+    gap: 20px;}
 }
 
 button {
@@ -88,5 +101,5 @@ a{
 }
 
 .endpoint{
-    width: 75%;
+    width: 80%;
 }
