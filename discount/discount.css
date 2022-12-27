@@ -88,8 +88,8 @@ button {
     font-size: 14px;
     display: flex;
     flex-direction: column;
-    place-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 span {
