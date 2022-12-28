@@ -10,7 +10,8 @@
 
 .BODY {
     background-color: white;
-    box-shadow: 0px 4px 25px 0px #867d7db0;
+    box-shadow: 0px 4px 25px 0px #b7afafb0 ;
+    box-shadow: 0 4px 25px 25px rgba(255, 255, 255, 0.808);
     /* filter: blur(6px); */
     border-radius: 10px;
     font-weight: 400;
@@ -47,8 +48,6 @@
     background-color: white;
     display: flex;
     justify-content: center;
-
-
 }
 
 
@@ -62,10 +61,32 @@
 
 .icons {
     padding: 10px;
-    display: flex;
-    justify-content: center;
     border-top: 1px solid #EDEDED;
     border-bottom: 1px solid #EDEDED;
+}
+
+.icon{
+    padding-left: 3px; 
+    padding-right: 3px;
+}
+
+@media screen and (min-width: 500px) {
+    .icon {
+        padding-left: 10px; 
+        padding-right: 10px;
+    }
+}
+
+.photo{
+    height: 25px;
+    width: 25px;
+}
+
+@media screen and (min-width: 500px) {
+    .photo {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 .flex {
@@ -91,14 +112,28 @@ button {
 
 }
 
-.copyright {
+.pp {
     color: #595959;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    text-align: center;
+    font-size: 12px;
 }
+
+@media screen and (min-width: 500px) {
+    .pp {
+        color: #595959;
+        font-size: 14px;
+    }
+}
+
+p{
+    font-size:14px;
+}
+
+@media screen and (min-width: 500px) {
+    p{
+        font-size: 16px;
+    }
+}
+
 
 span {
     font-weight: 600;
@@ -107,3 +142,4 @@ span {
 a {
     color: #595959;
 }
+

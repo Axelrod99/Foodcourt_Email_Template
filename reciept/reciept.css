@@ -69,10 +69,6 @@
     justify-content: center;
 }
 
-.tdd {
-    border: black solid 1px;
-    padding: 5px;
-}
 
 .x1 {
     padding: 10px;
@@ -84,15 +80,33 @@
 }
 
 .icons {
+    padding: 10px;
+    border-top: 1px solid #EDEDED;
     border-bottom: 1px solid #EDEDED;
 }
 
-.icons {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #EDEDED;
-    border-bottom: 1px solid #EDEDED;
+.icon{
+    padding-left: 1px; 
+    padding-right: 1px;
+}
+
+@media screen and (min-width: 500px) {
+    .icon {
+        padding-left: 10px; 
+        padding-right: 10px;
+    }
+}
+
+.photo{
+    height: 25px;
+    width: 25px;
+}
+
+@media screen and (min-width: 500px) {
+    .photo {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 
@@ -115,12 +129,25 @@
     text-align: center;
 }
 
-/* .fees {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
 
-p {
-    font-weight: 400;
+.pp {
+    color: #595959;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 500px) {
+    .pp {
+        color: #595959;
+        font-size: 14px;
+    }
+}
+
+p{
+    font-size:14px;
+}
+
+@media screen and (min-width: 500px) {
+    p{
+        font-size: 16px;
+    }
 }
