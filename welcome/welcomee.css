@@ -3,21 +3,21 @@
     color: #1A1A1A;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
-
-
 }
 
 
 .BODY {
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 25px 0px #b7afafb0 ;
     box-shadow: 0 4px 25px 25px rgba(255, 255, 255, 0.808);
-    /* filter: blur(6px); */
     border-radius: 10px;
     font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    color: #1A1A1A;
 
 }
-
 
 
 .logo {
@@ -115,6 +115,7 @@ button {
 .pp {
     color: #595959;
     font-size: 12px;
+    
 }
 
 @media screen and (min-width: 500px) {
@@ -134,6 +135,16 @@ p{
     }
 }
 
+.widthh{
+    width: 95%;
+}
+
+@media screen and (min-width: 500px) {
+    .widthh{
+        width: 85%;
+    }
+}
+
 
 span {
     font-weight: 600;
@@ -143,3 +154,18 @@ a {
     color: #595959;
 }
 
+
+@media screen and (min-width: 500px) {
+    #center{
+        width: 65%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    #center_two{
+        width: 85%;
+        margin: auto;
+    }
+}

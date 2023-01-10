@@ -13,6 +13,10 @@
     border-radius: 10px;
     color: #595959;
     font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    color: #1A1A1A;
 
 }
 
@@ -145,5 +149,30 @@ p{
 @media screen and (min-width: 500px) {
     p{
         font-size: 16px;
+    }
+}
+
+.widthh{
+    width: 95%;
+}
+
+@media screen and (min-width: 500px) {
+    .widthh{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #center{
+        width: 65%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    #center_two{
+        width: 85%;
+        margin: auto;
     }
 }

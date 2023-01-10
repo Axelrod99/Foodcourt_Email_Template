@@ -35,38 +35,27 @@
                 <td class="BODY">
                     <table width="100%">
 
-                        <tr>
-                            <td style="padding-top: 20px;">
-                                <center class="wrapper">
-                                    <table width="85%">
-                                        <tr>
-                                            <td>
-                                                <p style="font-weight: 500;">Hello Collins,
-                                                <p>
-                                                <p>Your order <span style="font-weight: 500;">#51AB9E</span> has been
-                                                    successfully completed.
-                                                </p>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </center>
-
-                            </td>
-                        </tr>
-
 
                         <!-- transaction details -->
                         <tr>
                             <td>
                                 <center class="wrapper">
-                                    <table width="85%">
+                                    <table class="widthh">
                                         <tr>
                                             <td>
-                                                <p style="font-weight: 500; color: #620412;"> Transaction Details</p>
+                                                <p style="font-weight: 500;">Hello <span style="font-weight: 500;" id="name"></span>,
+                                                <p>
+                                                <p>Your order <span style="font-weight: 500;" id="code"></span> has been
+                                                    successfully completed.
+                                                </p>
+
+                                                <p style="font-weight: 600; color: #620412;"> Transaction Details</p>
                                                 <p style="font-weight: 500;">Wrap City</p>
+
                                             </td>
                                         </tr>
+
+                                 
 
                                         
                                         <tr>
@@ -78,13 +67,13 @@
                                                         <td>
                                                             <table>
                                                                 <tr>
-                                                                    <td style="padding-top: 7px; display: flex; ">
-                                                                        <p class="x1">x1</p>
+                                                                    <td style=" display: flex; ">
+                                                                        <p class="x1" id="x1"></p>
                                                                     </td>
                                                                     <td>
-                                                                        <p>1/4 <span>BBQ Chicken</span></p>
-                                                                        <p>2x <span> French fries</span></p>
-                                                                        <p>2x <span> French fries</span></p>
+                                                                        <p id="first_meal"></p>
+                                                                        <p id="second_meal"></p>
+                                                                        <p id="third_meal"></p>
 
                                                                     </td>
                                                                 </tr>
@@ -99,10 +88,8 @@
                                                         <td class="price">
                                                             
                                                                 <tr>
-                                                                    <td class="fees" style="align-items: center;">
-                                                                        <p style="font-weight: 500;"><span><img
-                                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672244113/Naira_dqp0qr.png"
-                                                                                    alt="naira" /></span> 2,550.00</p>
+                                                                    <td style="display: block;">
+                                                                        <p style="font-weight: 500;" id="price"> </p>
                                                                     </td>
                                                                 </tr>
 
@@ -115,6 +102,7 @@
                                         </tr>
 
 
+
                                         <!-- second -->
                                         <tr>
                                             <td>
@@ -123,7 +111,7 @@
                                                         <tr>
                                                             <td class="two-columns">
                                                                 <table class="first-column">
-                                                                    <tr>
+                                                                    <tr class="trr2">
                                                                         <td>
 
                                                                             <table>
@@ -145,24 +133,11 @@
                                                                 <table class="second-column">
                                                                     <tr>
                                                                         <td class="fees" style="align-items: center;">
-                                                                            <p style="font-weight: 500;"><span><img
-                                                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672244113/Naira_dqp0qr.png"
-                                                                                        alt="naira" /></span> 2,550.00
-                                                                            </p>
-                                                                            <p style="font-weight: 500;"><span><img
-                                                                                       src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672244113/Naira_dqp0qr.png"
-                                                                                        alt="naira" /></span> 2,550.00
-                                                                            </p>
-                                                                            <p style="color: green; font-weight: 500 ">
-                                                                                Free!</p>
-                                                                            <p style="font-weight: 500;"><span><img
-                                                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672244113/Naira_dqp0qr.png"
-                                                                                        alt="naira" /></span>2,550.00
-                                                                            </p>
-                                                                            <p style="color: red; font-weight: 500">
-                                                                                <span><img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672244113/Red_Naira_dogpwb.png"
-                                                                                        alt="naira" /></span>-2,550.00
-                                                                            </p>
+                                                                            <p style="font-weight: 500;" id="subtotal"> </p>
+                                                                            <p style="font-weight: 500;" id="delivery_fee"> </p>
+                                                                            <p style="color: green; font-weight: 500 " id="service_fee"> </p>
+                                                                            <p style="font-weight: 500;" id="Order_total"> </p>
+                                                                            <p style="color: red; font-weight: 500" id="Amount_paid"> </p>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -188,18 +163,16 @@
                                         <tr>
                                             <td align="center" style='text-align:center; padding-top: 20px;'>
                                                 <center class="wrapper">
-                                                    <table width="85%" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
+                                                    <table class="widthh" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
                                                             <td align="center" class="icons" style="text-align: center;">
-                
-                                                                <!-- <div class="flex"> -->
+
                                                                     <a href="#" class="icon"><img class="photo" src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png" alt="" width=""></a>
                                                                     <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png" alt="" width=""></a>
                                                                     <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png" alt="" width=""></a>
                                                                     <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png" alt="" width=""></a>
                                                                     <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png" alt="" width=""></a>
                                                                     <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png" alt="" width=""></a>
-                                                                <!-- </div> -->
                 
                                                             </td>
                                                         </tr>
@@ -210,7 +183,7 @@
 
 
                                         <tr>
-                                            <td  align="center" style='text-align:center'>
+                                            <td  align="center" style='text-align:center; padding-bottom: 20px;'>
                                                 <center class="wrapper">
                                                     <table width="85%" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
@@ -237,10 +210,139 @@
 
                     </table>
                 </td>
+        
             </tr>
-
+        </table>
 
     </center>
+
+    <script>
+
+        const Array = [
+
+            [
+                {
+                    "name": "Collins",
+                    "code": "#51AB9E",
+                    "first_meal": "1/4 BBQ Chicken",
+                    "second_meal": "2x French Fries",
+                    "third_meal": "2x French Fries",
+                    "price": "₦ 2,550.00",
+                    "x1": "x1"
+                },
+                {
+                    "Subtotal": "₦ 2,550.00",
+                    "Delivery_fee": "₦ 2,550.00",
+                    "Service_fee": "Free!",
+                    "Order_total": "₦ 2,550.00",
+                    "Amount_paid": "₦ -2,550.00"
+                }
+
+
+            ]
+
+        ]
+
+
+        // functions
+        function name() {
+            var nametag = Array.map((item, index) => item[0].name)
+            var theprice = document.getElementById('name')
+            var text = document.createTextNode(nametag);
+            theprice.appendChild(text)
+        }
+        name()
+
+        function code() {
+            var codetag = Array.map((item, index) => item[0].code)
+            var theprice = document.getElementById('code')
+            var text = document.createTextNode(codetag);
+            theprice.appendChild(text)
+        }
+        code()
+
+        function first_meal() {
+            var first_meal = Array.map((item, index) => item[0].first_meal)
+            var theprice = document.getElementById('first_meal')
+            var text = document.createTextNode(first_meal);
+            theprice.appendChild(text)
+        }
+        first_meal()
+
+        function second_meal() {
+            var second_meal = Array.map((item, index) => item[0].second_meal)
+            var theprice = document.getElementById('second_meal')
+            var text = document.createTextNode(second_meal);
+            theprice.appendChild(text)
+        }
+        second_meal()
+
+        function third_meal() {
+            var third_meal = Array.map((item, index) => item[0].third_meal)
+            var theprice = document.getElementById('third_meal')
+            var text = document.createTextNode(third_meal);
+            theprice.appendChild(text)
+        }
+        third_meal()
+
+        function price() {
+            var price = Array.map((item, index) => item[0].price)
+            var theprice = document.getElementById('price')
+            var text = document.createTextNode(price);
+            theprice.appendChild(text)
+        }
+        price()
+
+        function subtotal() {
+            var subtotal = Array.map((item, index) => item[1].Subtotal)
+            var thesubtotal = document.getElementById('subtotal')
+            var text = document.createTextNode(subtotal);
+            thesubtotal.appendChild(text)
+        }
+        subtotal()
+
+        function Delivery_fee() {
+            var Delivery_fee = Array.map((item, index) => item[1].Delivery_fee)
+            var theDelivery_fee = document.getElementById('delivery_fee')
+            var text = document.createTextNode(Delivery_fee)
+            theDelivery_fee.appendChild(text)
+        }
+        Delivery_fee()
+
+        function service_fee() {
+            var service_fee = Array.map((item, index) => item[1].Service_fee)
+            var theservice_fee = document.getElementById('service_fee')
+            var text = document.createTextNode(service_fee)
+            theservice_fee.appendChild(text)
+        }
+        service_fee()
+
+        function Order_total() {
+            var Order_total = Array.map((item, index) => item[1].Order_total)
+            var theOrder_total = document.getElementById('Order_total')
+            var text = document.createTextNode(Order_total)
+            theOrder_total.appendChild(text)
+        }
+        Order_total()
+
+        function Amount_paid() {
+            var Amount_paid = Array.map((item, index) => item[1].Amount_paid)
+            var theAmount_paid = document.getElementById('Amount_paid')
+            var text = document.createTextNode(Amount_paid)
+            theAmount_paid.appendChild(text)
+        }
+        Amount_paid()
+
+        function num() {
+            var nums = Array.map((item, index) => item[0].x1)
+            var nums_total = document.getElementById('x1')
+            var text = document.createTextNode(nums)
+            nums_total.appendChild(text)
+        }
+        num()
+
+
+    </script>
 
 </body>
 

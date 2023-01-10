@@ -2,6 +2,7 @@
     background-color: #FEF0F2;
     color: #1A1A1A;
     font-family: 'Manrope', sans-serif;
+    font-weight: 400;
 }
 
 .BODY {
@@ -11,6 +12,9 @@
     border-radius: 10px;
     font-size: 16px;
     font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    font-size: 16px;
 }
 
 .logo {
@@ -130,5 +134,30 @@ p{
 @media screen and (min-width: 500px) {
     p{
         font-size: 16px;
+    }
+}
+
+.widthh{
+    width: 95%;
+}
+
+@media screen and (min-width: 500px) {
+    .widthh{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #center{
+        width: 65%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    #center_two{
+        width: 85%;
+        margin: auto;
     }
 }

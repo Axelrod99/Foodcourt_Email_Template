@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 500px) {
     .first {
-        width: 85%;
+        width: 80%;
     }
 }
 
@@ -119,3 +119,13 @@ p{
     }
 }
  
+
+.widthh{
+    width: 95%;
+}
+
+@media screen and (min-width: 500px) {
+    .widthh{
+        width: 85%;
+    }
+}

@@ -10,8 +10,11 @@
     box-shadow: 0px 4px 25px #888;
     /* filter: blur(6px); */
     border-radius: 10px;
-
-
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    color: #1A1A1A;
 }
 
 .logo {
@@ -32,7 +35,19 @@
 
 @media screen and (min-width: 500px) {
     .first {
-    width: 85%;}
+        width: 85%;
+    }
+}
+
+
+.widthh {
+    width: 95%;
+}
+
+@media screen and (min-width: 500px) {
+    .widthh {
+        width: 85%;
+    }
 }
 
 .container {
@@ -58,19 +73,19 @@
     border-bottom: 1px solid #EDEDED;
 }
 
-.icon{
-    padding-left: 3px; 
+.icon {
+    padding-left: 3px;
     padding-right: 3px;
 }
 
 @media screen and (min-width: 500px) {
     .icon {
-        padding-left: 10px; 
+        padding-left: 10px;
         padding-right: 10px;
     }
 }
 
-.photo{
+.photo {
     height: 25px;
     width: 25px;
 }
@@ -110,12 +125,12 @@ button {
     }
 }
 
-p{
-    font-size:14px;
+p {
+    font-size: 14px;
 }
 
 @media screen and (min-width: 500px) {
-    p{
+    p {
         font-size: 16px;
     }
 }
@@ -134,6 +149,29 @@ span {
 }
 
 
-a{
+a {
     color: #595959;
+}
+
+@media screen and (min-width: 500px) {
+    #center {
+        width: 65%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    #center_two {
+        width: 85%;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .shop {
+        justify-content: center;
+    }
 }
