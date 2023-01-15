@@ -6,10 +6,273 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wallet</title>
-    <link rel="stylesheet" href="./wallet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #564E4F;
+            }
+
+            p,
+            h2 {
+                color: #CBCBD2;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            p {
+                color: #141414;
+            }
+
+            body {
+                background-color: #FEF0F2;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            .BODY {
+                background-color: #ffffff;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .BODY {
+                background-color: #0D0C0C;
+            }
+
+            .names {
+                color: #A59292;
+            }
+
+            .order {
+                color: #CBCBD2;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+            .tablee {
+                background-color: #F5F4F5;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .tablee {
+                background-color: #272525;
+            }
+
+        }
+
+
+
+        .bodied {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 400;
+            line-height: 25px;
+            font-style: normal;
+
+        }
+
+        .BODY {
+            border-radius: 10px;
+            font-weight: 400;
+            line-height: 25px;
+            font-style: normal;
+        }
+
+        .logo {
+            text-align: center;
+            color: #E60A2B;
+            font-size: larger;
+            font-weight: bolder;
+            /* padding: 40px; */
+        }
+
+        .the_logo {
+            padding: 20px;
+        }
+
+        .first {
+            padding-bottom: 50px;
+            width: 100%;
+
+        }
+
+        @media screen and (min-width: 500px) {
+            .first {
+                width: 80%;
+            }
+        }
+
+        .flex {
+            display: flex;
+            gap: 8px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .flex {
+                gap: 20px;
+            }
+        }
+
+
+        .copyright {
+            color: #595959;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        .icons {
+            padding: 10px;
+
+        }
+
+        .icon {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .icon {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .photo {
+            height: 25px;
+            width: 25px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .photo {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+
+        .pp {
+            color: #595959;
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .pp {
+                color: #595959;
+                font-size: 14px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 500px) {
+            p {
+                font-size: 16px;
+            }
+        }
+
+
+        .widthh {
+            width: 95%;
+        }
+
+        @media screen and (min-width: 500px) {
+            .widthh {
+                width: 90%;
+            }
+        }
+
+        .tablee {
+            box-shadow: inset 0px 4px 14px #35313556;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            .tablee {
+                background-color: #F5F4F5;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .tablee {
+                background-color: #272525;
+            }
+
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            .last_table {
+                background-color: #F7F7F8;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .last_table {
+                background-color: #181616;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+
+            .last_table p,
+            span,
+            .pp,
+            a {
+                color: #5C5657;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+
+            .last_table p,
+            span,
+            .pp,
+            a {
+                color: #FFFFFF;
+            }
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+            #border {
+                border-bottom: solid 1px #E7E4E4;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            #border {
+                border-bottom: solid 1px #403A3A
+            }
+        }
+    </style>
 </head>
 
 
@@ -23,7 +286,8 @@
                     <table width="100%" class="logo">
                         <tr>
                             <td class="the_logo">
-                                <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/the_logo_utj3nt.png" alt="" width="">
+                                <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/the_logo_utj3nt.png"
+                                    alt="" width="">
                             </td>
                         </tr>
                     </table>
@@ -39,80 +303,214 @@
                             <td>
                                 <center class="wrapper">
                                     <table class="widthh">
+
                                         <tr>
                                             <td>
-                                                <p style="font-weight: 500;">Hello <span style="font-weight: 500;" id="name"></span>,
+                                                <p style="font-weight: 500;">Hello <span style="font-weight: 500;"
+                                                        id="name"></span>,
                                                 <p>
                                                 <p>Your FoodCourt Wallet has been successfully credited</p>
 
-                                                <p style="font-weight: 600; color: #620412;">Transaction Details</p>
-
-                                                <div style="display: flex;">
-                                                    <p>Amount: </p>
-                                                    <p id="price_" style="font-weight: 600; color: #46AE31;"></p>
-                                                </div>
-
-                                                <p>Reference: <span id="ref"></span></p>
-
-                                                <p>Date: <span id="date"></span></p>
-
-                                                <p>With love,<br>
-                                                    <span style="font-weight: 500;">Team FoodCourt❤</span>
+                                                <p> <span style="color: red; font-weight: 500" id="Amount_paid"> </span>
+                                                    <span>was charged for your meal</span>
                                                 </p>
-
-
                                             </td>
                                         </tr>
 
-                                    </table>
-                                </center>
-                            </td>
-                        </tr>
+
+                                        <table class="tablee" style="width: 90%;">
+
+                                            <tr>
+                                                <td id="border">
 
 
-                        <tr>
-                            <td align="center" style='text-align:center; padding-top: 20px;'>
-                                <center class="wrapper">
-                                    <table class="widthh" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
+                                                    <p style="font-weight: 600;">Transaction Details</p>
+
+                                                    <div style="display: flex;">
+                                                        <p>Amount: </p>
+                                                        <p id="price_" style="font-weight: 600; color: #46AE31;"></p>
+                                                    </div>
+
+
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+
+                                                    <p>Reference: <span id="ref"></span></p>
+
+                                                    <p>Date: <span id="date"></span></p>
+
+
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+
+
+
                                         <tr>
-                                            <td align="center" class="icons" style="text-align: center;">
+                                            <td style="padding-bottom: 80px; padding-top: 20px;">
+                                                <center class="wrapper">
+                                                    <table class="widthh">
+                                                        <tr>
+                                                            <td>
+                                                                <p>With love,<br>
+                                                                    <span>Team FoodCourt❤</span>
+                                                                </p>
 
-                                                <!-- <div class="flex"> -->
-                                                    <a href="#" class="icon"><img class="photo" src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png" alt="" width=""></a>
-                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png" alt="" width=""></a>
-                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png" alt="" width=""></a>
-                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png" alt="" width=""></a>
-                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png" alt="" width=""></a>
-                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png" alt="" width=""></a>
-                                                <!-- </div> -->
+                                                            </td>
 
+                                                        </tr>
+
+                                                    </table>
+                                                </center>
                                             </td>
                                         </tr>
+
+
+                                        <table class="last_table" style="border-radius: 10px; width: 100%;">
+
+                                            <tr>
+                                                <td align="center" style='padding-top: 20px;'>
+                                                    <center class="wrapper">
+                                                        <table class="widthh" align="center" style='text-align:center'
+                                                            border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td align="center" class="icons"
+                                                                    style="text-align: center;">
+
+                                                                    <picture class="icon">
+                                                                        <source class="photo"
+                                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_8_yaoidk.png"
+                                                                            media="(prefers-color-scheme:dark)">
+                                                                        <a href="#"><img class="photo"
+                                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png"></a>
+                                                                    </picture>
+                
+                
+                
+                
+                
+                                                                    <picture class="icon">
+                                                                        <source class="photo"
+                                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_7_kdfymg.png"
+                                                                            media="(prefers-color-scheme:dark)">
+                                                                        <a href="#"><img class="photo"
+                                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png"></a>
+                                                                    </picture>
+                
+                
+                
+                
+                
+                
+                
+                                                                    <picture class="icon">
+                                                                        <source class="photo"
+                                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_6_guyevb.png"
+                                                                            media="(prefers-color-scheme:dark)">
+                                                                        <a href="#"><img class="photo"
+                                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png"></a>
+                
+                                                                    </picture>
+                
+                
+                
+                
+                
+                                                                    <picture class="icon">
+                                                                        <source class="photo"
+                                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_2_vxts5i.png"
+                                                                            media="(prefers-color-scheme:dark)">
+                                                                        <a href="#"><img class="photo"
+                                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png"></a>
+                                                                    </picture>
+                
+                
+                
+                
+                
+                                                                    <picture class="icon">
+                                                                        <source class="photo"
+                                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_4_gmers3.png"
+                                                                            media="(prefers-color-scheme:dark)">
+                                                                        <a href="#"> <img class="photo"
+                                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png"></a>
+                                                                    </picture>
+                
+                
+                
+                
+                
+                                                                    <picture class="icon">
+                                                                        <source class="photo"
+                                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_3_lapo1e.png"
+                                                                            media="(prefers-color-scheme:dark)">
+                                                                        <a href="#"> <img class="photo"
+                                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png"></a>
+                                                                    </picture>
+
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </center>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="center" style='text-align:center; padding-bottom: 40px;'>
+                                                    <center class="wrapper" id="center">
+                                                        <table width="90%" align="center" style='text-align:center'
+                                                            border="0" cellspacing="0" cellpadding="0">
+
+
+                                                            <tr>
+                                                                <td align="center" style="text-align: center;">
+                                                                    <p class="pp">Copyright © 2022 Cokitchen
+                                                                        Technologies,
+                                                                        All rights
+                                                                        reserved. </p>
+                                                                </td>
+                                                            </tr>
+
+
+                                                        </table>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+
+
+
+
+
+
+
+
+
+
                                     </table>
                                 </center>
                             </td>
                         </tr>
 
-                        <tr>
-                            <td  align="center" style='text-align:center; padding-bottom: 20px;'>
-                                <center class="wrapper">
-                                    <table width="85%" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                            <td align="center" style="text-align: center;">
-                                                <p class="pp">Copyright © 2022 Cokitchen Technologies,
-                                                    All rights
-                                                    reserved. </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </center>
-                            </td>
-                        </tr>
 
 
 
 
                     </table>
+                </td>
+            </tr>
+
+
+        </table>
     </center>
 
     </td>

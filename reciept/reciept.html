@@ -6,14 +6,360 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Reciept</title>
-    <link rel="stylesheet" href="./reciept.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #564E4F;
+            }
+
+            p,
+            h2 {
+                color: #F6F4F4;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            p {
+                color: #141414;
+            }
+
+            body {
+                background-color: #FEF0F2;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            .BODY {
+                background-color: #ffffff;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .BODY {
+                background-color: #0D0C0C;
+            }
+
+            .names {
+                color: #A59292;
+            }
+
+            .order {
+                color: #CBCBD2;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+            .tablee {
+                background-color: #F5F4F5;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .tablee {
+                background-color: #272525;
+            }
+
+        }
+
+
+        .main_body {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 400;
+            line-height: 25px;
+            font-style: normal;
+
+        }
+
+        .BODY {
+            border-radius: 10px;
+            font-weight: 400;
+            line-height: 25px;
+            font-style: normal;
+        }
+
+        .logo {
+            text-align: center;
+            color: #E60A2B;
+            font-size: larger;
+            font-weight: bolder;
+            /* padding: 40px; */
+        }
+
+        .the_logo {
+            padding: 20px;
+        }
+
+
+        .first {
+            padding-bottom: 50px;
+            width: 100%;
+
+        }
+
+        @media screen and (min-width: 500px) {
+            .first {
+                width: 85%;
+            }
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .two-columns {
+            display: flex;
+
+        }
+
+        .first-column {
+            width: 50%;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .second-column {
+            width: 50%;
+            vertical-align: top;
+            text-align: end;
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+            .x1 {
+                /* border-color: #4D4D4D1A; */
+                border: #40404029 solid 1px;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .x1 {
+                /* background-color: #403A3A; */
+                border: #595959 solid 1px;
+            }
+
+        }
+
+
+        .x1 {
+            padding: 2px;
+            border-radius: 40px;
+            font-size: 12px;
+            color: #E60A2B;
+            width: 24px;
+            font-weight: 400;
+        }
+
+        .trr {
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-around;
+            color: #837C7D;
+
+        }
+
+        .trr2 {
+            display: flex;
+            text-align: justify;
+            color: #837C7D;
+
+        }
+
+        .icons {
+            padding: 10px;
+        }
+
+        .icon {
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .icon {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .photo {
+            height: 25px;
+            width: 25px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .photo {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+
+        .flex {
+            display: flex;
+            gap: 8px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .flex {
+                gap: 20px;
+            }
+        }
+
+        .copyright {
+            color: #595959;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        .pp {
+            color: #595959;
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .pp {
+                color: #595959;
+                font-size: 14px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 500px) {
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .widthh {
+            width: 95%;
+        }
+
+        @media screen and (min-width: 500px) {
+            .widthh {
+                width: 85%;
+            }
+        }
+
+
+        .tablee {
+            box-shadow: inset 0px 4px 14px #35313556;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+
+        @media screen and (min-width: 500px) {
+            .text {
+                font-size: 18px;
+            }
+        }
+
+
+
+
+
+        @media screen and (prefers-color-scheme: light) {
+            .fc_team {
+                color: #645E5F;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .fc_team {
+                color: #A59292;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+            .last_table {
+                background-color: #F7F7F8;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .last_table {
+                background-color: #181616;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+
+            .last_table p,
+            span,
+            .pp,
+            a {
+                color: #5C5657;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+
+            .last_table p,
+            span,
+            .pp,
+            a {
+                color: #FFFFFF;
+            }
+        }
+
+        #fee_one {
+            color: #837C7D;
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+            #border {
+                border-bottom: solid 1px #E7E4E4;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            #border {
+                border-bottom: solid 1px #403A3A
+            }
+        }
+    </style>
 </head>
 
 
-<body class="bodied">
+<body class="main_body">
     <center class="wrapper">
 
         <table width="90%" class="first">
@@ -23,7 +369,8 @@
                     <table width="100%" class="logo">
                         <tr>
                             <td class="the_logo">
-                                <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/the_logo_utj3nt.png" alt="" width="">
+                                <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/the_logo_utj3nt.png"
+                                    alt="" width="">
                             </td>
                         </tr>
                     </table>
@@ -43,114 +390,16 @@
                                     <table class="widthh">
                                         <tr>
                                             <td>
-                                                <p style="font-weight: 500;">Hello <span style="font-weight: 500;" id="name"></span>,
+                                                <p class="names" style="font-weight: 500;">Hello <span class="names"
+                                                        style="font-weight: 500;" id="name"></span>,
                                                 <p>
-                                                <p>Your order <span style="font-weight: 500;" id="code"></span> has been
+                                                <p class="order">Your order <span style="font-weight: 500;"
+                                                        id="code"></span> has been
                                                     successfully completed.
                                                 </p>
 
-                                                <p style="font-weight: 600; color: #620412;"> Transaction Details</p>
-                                                <p style="font-weight: 500;">Wrap City</p>
-
-                                            </td>
-                                        </tr>
-
-                                 
-
-                                        
-                                        <tr>
-
-                                            <td class="two-columns">
-
-                                                <table class="first-column">
-                                                    <tr>
-                                                        <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td style=" display: flex; ">
-                                                                        <p class="x1" id="x1"></p>
-                                                                    </td>
-                                                                    <td>
-                                                                        <p id="first_meal"></p>
-                                                                        <p id="second_meal"></p>
-                                                                        <p id="third_meal"></p>
-
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-
-
-                                                <table class="second-column">
-                                                    <tr>
-                                                        <td class="price">
-                                                            
-                                                                <tr>
-                                                                    <td style="display: block;">
-                                                                        <p style="font-weight: 500;" id="price"> </p>
-                                                                    </td>
-                                                                </tr>
-
-                                                        </td>
-                                                    </tr>
-                                                </table>
-
-                                                
-                                            </td>
-                                        </tr>
-
-
-
-                                        <!-- second -->
-                                        <tr>
-                                            <td>
-                                                <center class="wrapper">
-                                                    <table width="100%">
-                                                        <tr>
-                                                            <td class="two-columns">
-                                                                <table class="first-column">
-                                                                    <tr class="trr2">
-                                                                        <td>
-
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="fees">
-                                                                                        <p>Subtotal</p>
-                                                                                        <p>Delivery fee</p>
-                                                                                        <p>Service fee</p>
-                                                                                        <p>Order total</p>
-                                                                                        <p>Amount paid</p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-
-                                                                <table class="second-column">
-                                                                    <tr>
-                                                                        <td class="fees" style="align-items: center;">
-                                                                            <p style="font-weight: 500;" id="subtotal"> </p>
-                                                                            <p style="font-weight: 500;" id="delivery_fee"> </p>
-                                                                            <p style="color: green; font-weight: 500 " id="service_fee"> </p>
-                                                                            <p style="font-weight: 500;" id="Order_total"> </p>
-                                                                            <p style="color: red; font-weight: 500" id="Amount_paid"> </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-
-                                                            </td>
-
-                                                        </tr>
-                                                    </table>
-
-                                                </center>
-
-                                                <p>With love,<br>
-                                                    <span style="font-weight: 500;">Team FoodCourt❤</span>
+                                                <p> <span style="color: red; font-weight: 500" id="Amount_paid"> </span>
+                                                    <span style="color: #858585;">was charged for your meal</span>
                                                 </p>
 
 
@@ -159,60 +408,274 @@
 
 
 
+                                        <table class="tablee" style="width: 90%;">
 
-                                        <tr>
-                                            <td align="center" style='text-align:center; padding-top: 20px;'>
-                                                <center class="wrapper">
-                                                    <table class="widthh" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <p style="font-weight: 500; color: #858585;"> Transaction Details
+                                                    </p>
+                                                    <p style="font-weight: 500;">Wrap City</p>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td class="two-columns" id="border">
+
+                                                    <table class="first-column">
                                                         <tr>
-                                                            <td align="center" class="icons" style="text-align: center;">
+                                                            <td>
+                                                                <table>
+                                                                    <tr>
+                                                                        <td style=" display: flex; ">
+                                                                            <p class="x1" id="x1"></p>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p id="first_meal"></p>
+                                                                            <p id="second_meal"></p>
+                                                                            <p id="third_meal"></p>
 
-                                                                    <a href="#" class="icon"><img class="photo" src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png" alt="" width=""></a>
-                                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png" alt="" width=""></a>
-                                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png" alt="" width=""></a>
-                                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png" alt="" width=""></a>
-                                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png" alt="" width=""></a>
-                                                                    <a href="#" class="icon"><img class="photo"  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png" alt="" width=""></a>
-                
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
                                                             </td>
                                                         </tr>
                                                     </table>
-                                                </center>
-                                            </td>
-                                        </tr>
 
 
-                                        <tr>
-                                            <td  align="center" style='text-align:center; padding-bottom: 20px;'>
-                                                <center class="wrapper">
-                                                    <table width="85%" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
+                                                    <table class="second-column">
                                                         <tr>
-                                                            <td align="center" style="text-align: center;">
-                                                                <p class="pp">Copyright © 2022 Cokitchen Technologies,
-                                                                    All rights
-                                                                    reserved. </p>
+                                                            <td class="price">
+
+                                                        <tr>
+                                                            <td style="display: block;">
+                                                                <p style="font-weight: 500;" id="price"> </p>
                                                             </td>
                                                         </tr>
-                                                    </table>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        
-                                    </table>
-                                </center>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
                             </td>
                         </tr>
 
 
 
+                        <!-- second -->
+                        <tr>
+                            <td>
+                                <center class="wrapper">
+                                    <table width="100%">
+                                        <tr>
+                                            <td class="two-columns">
+                                                <table class="first-column">
+                                                    <tr class="trr2">
+                                                        <td>
 
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="fees" id="fee">
+                                                                        <p id="fee_one">Subtotal</p>
+                                                                        <p id="fee_one">Delivery fee</p>
+                                                                        <p id="fee_one">Service fee</p>
+                                                                        <p id="fee_one">Order total</p>
+                                                                        <p id="fee_one">Amount paid</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                <table class="second-column">
+                                                    <tr>
+                                                        <td class="fees" style="align-items: center;">
+                                                            <p style="font-weight: 500;" id="subtotal"> </p>
+                                                            <p style="font-weight: 500;" id="delivery_fee"> </p>
+                                                            <p style="color: green; font-weight: 500 " id="service_fee">
+                                                            </p>
+                                                            <p style="font-weight: 500;" id="Order_total"> </p>
+                                                            <p style="color: red; font-weight: 500" id="Amount_paidd">
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+
+                                        </tr>
+                                    </table>
+
+                                </center>
+
+
+
+
+                            </td>
+                        </tr>
 
 
                     </table>
+                
+
+
+
+
+            <tr>
+                <td style="padding-bottom: 80px; padding-top: 20px;">
+                    <center class="wrapper">
+                        <table class="widthh">
+                            <tr>
+                                <td>
+                                    <p class="fc_team">With love,<br>
+                                        <span style="font-weight: 500;" class="fc_team">Team FoodCourt❤</span>
+                                    </p>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+                    </center>
                 </td>
-        
             </tr>
+
+
+            <table class="last_table" style="border-radius: 10px; width: 100%;">
+
+
+                <tr>
+                    <td align="center" style='padding-top: 20px;'>
+                        <center class="wrapper">
+                            <table class="widthh" align="center" style='text-align:center' border="0" cellspacing="0"
+                                cellpadding="0">
+                                <tr>
+                                    <td align="center" class="icons" style="text-align: center;">
+
+                                        <picture class="icon">
+                                            <source class="photo"
+                                                srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_8_yaoidk.png"
+                                                media="(prefers-color-scheme:dark)">
+                                            <a href="#"><img class="photo"
+                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png"></a>
+                                        </picture>
+
+
+
+
+
+                                        <picture class="icon">
+                                            <source class="photo"
+                                                srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_7_kdfymg.png"
+                                                media="(prefers-color-scheme:dark)">
+                                            <a href="#"><img class="photo"
+                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png"></a>
+                                        </picture>
+
+
+
+
+
+
+
+                                        <picture class="icon">
+                                            <source class="photo"
+                                                srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_6_guyevb.png"
+                                                media="(prefers-color-scheme:dark)">
+                                            <a href="#"><img class="photo"
+                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png"></a>
+
+                                        </picture>
+
+
+
+
+
+                                        <picture class="icon">
+                                            <source class="photo"
+                                                srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_2_vxts5i.png"
+                                                media="(prefers-color-scheme:dark)">
+                                            <a href="#"><img class="photo"
+                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png"></a>
+                                        </picture>
+
+
+
+
+
+                                        <picture class="icon">
+                                            <source class="photo"
+                                                srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_4_gmers3.png"
+                                                media="(prefers-color-scheme:dark)">
+                                            <a href="#"> <img class="photo"
+                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png"></a>
+                                        </picture>
+
+
+
+
+
+                                        <picture class="icon">
+                                            <source class="photo"
+                                                srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_3_lapo1e.png"
+                                                media="(prefers-color-scheme:dark)">
+                                            <a href="#"> <img class="photo"
+                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png"></a>
+                                        </picture>
+
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </center>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td align="center" style='text-align:center; padding-bottom: 40px;'>
+                        <center class="wrapper" id="center">
+                            <table width="90%" align="center" style='text-align:center' border="0" cellspacing="0"
+                                cellpadding="0">
+
+                                <tr>
+                                    <td align="center" style="text-align: center;">
+                                        <p class="pp">Copyright © 2022 Cokitchen Technologies,
+                                            All rights
+                                            reserved. </p>
+                                    </td>
+                                </tr>
+
+
+                            </table>
+                        </center>
+                    </td>
+                </tr>
+
+
+            </table>
+
+
         </table>
+    </center>
+    </td>
+    </tr>
+
+
+
+
+
+
+    </table>
+    </td>
+
+    </tr>
+    </table>
 
     </center>
 
@@ -332,6 +795,14 @@
             theAmount_paid.appendChild(text)
         }
         Amount_paid()
+
+        function Amount_paidd() {
+            var Amount_paid = Array.map((item, index) => item[1].Amount_paid)
+            var theAmount_paidd = document.getElementById('Amount_paidd')
+            var text = document.createTextNode(Amount_paid)
+            theAmount_paidd.appendChild(text)
+        }
+        Amount_paidd()
 
         function num() {
             var nums = Array.map((item, index) => item[0].x1)

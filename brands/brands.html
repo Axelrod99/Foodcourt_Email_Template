@@ -6,16 +6,294 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brands</title>
-    <link rel="stylesheet" href="brands.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #564E4F;
+            }
+
+            p,
+            h2 {
+                color: #F6F4F4;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            p {
+                color: #141414;
+            }
+
+            body {
+                background-color: #FEF0F2;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            .BODY {
+                background-color: #ffffff;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .BODY {
+                background-color: #0D0C0C;
+            }
+
+        }
+
+
+
+        .main_body {
+            font-family: 'Manrope', sans-serif;
+
+        }
+
+        .BODY {
+            border-radius: 10px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.3px;
+            font-size: 16px;
+
+
+        }
+
+        .logo {
+            text-align: center;
+            color: #E60A2B;
+            font-size: larger;
+            font-weight: bolder;
+            /* padding: 40px; */
+        }
+
+        .the_logo {
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .red {
+            color: #A59292;
+        }
+
+
+        .first {
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 500px) {
+            .first {
+                width: 90%;
+            }
+        }
+
+        .firstt {
+            width: 90%;
+            padding-top: 10px;
+        }
+
+        .widthh {
+            width: 95%;
+        }
+
+        @media screen and (min-width: 500px) {
+            .widthh {
+                width: 95%;
+            }
+        }
+
+
+        .cloud {
+            width: 100%;
+        }
+
+
+        .header {
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 22px;
+            line-height: 22px;
+        }
+
+
+        .icons {
+            padding: 10px;
+        }
+
+        .icon {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .icon {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .photo {
+            height: 25px;
+            width: 25px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .photo {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .P_tag {
+            color: #595959;
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 500px) {
+            .P_tag {
+                color: #595959;
+                font-size: 14px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 500px) {
+            p {
+                font-size: 16px;
+            }
+        }
+
+        /* footer */
+        .copyright {
+            color: #595959;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            text-align: center;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .header {
+            font-weight: 500;
+        }
+
+        a {
+            color: #595959;
+        }
+
+
+        .img-div {
+            display: none;
+        }
+
+        .picture {
+            display: none;
+        }
+
+        /* .display{
+    display: ;
+} */
+
+
+        @media screen and (min-width: 500px) {
+            .img-div {
+                display: flex;
+            }
+
+            .picture {
+                display: flex;
+            }
+
+            .display {
+                display: none;
+            }
+
+
+        }
+
+        @media screen and (min-width: 500px) {
+            #center {
+                width: 65%;
+                margin: auto;
+            }
+        }
+
+
+        @media screen and (min-width: 500px) {
+            #center_two {
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+
+
+        @media screen and (prefers-color-scheme: light) {
+            .last_table {
+                background-color: #F7F7F8;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .last_table {
+                background-color: #181616;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: light) {
+
+            .last_table p,
+            span,
+            .P_tag,
+            a {
+                color: #5C5657;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+
+            .last_table p,
+            span,
+            .P_tag,
+            a {
+                color: #FFFFFF;
+            }
+        }
+    </style>
 </head>
 
-<body class="bodied">
+<body class="main_body">
     <center class="wrapper">
 
-        <table width="85%" class="first">
+        <table width="100%" class="first">
 
             <tr>
                 <td>
@@ -33,33 +311,19 @@
 
             <tr>
                 <td class="BODY">
-                    <table width="100%">
-                        <tr>
-                            <td class="display">
-                                <center class="wrapper" style="padding-top: 20px;">
-                                    <table width="85%">
-                                        <tr>
-                                            <td class="image">
-
-                                            </td>
-                                        </tr>
-
-
-
-                                    </table>
-                                </center>
-                            </td>
-                        </tr>
+                    <table width="100%" class="first_table">
 
 
                         <tr>
                             <td style="padding-top: 20px;">
                                 <center class="wrapper">
-                                    <table width="85%">
+                                    <table width="90%">
                                         <tr>
                                             <td>
-                                                <p style="font-weight: 500;">Hi Collins, what are you craving?🙃</p>
-                                                <p>Burgers, Shawarmas, Jollof rice, or pounded yam? Get all of these and
+                                                <h2 style="font-weight: 700;">Hi Collins, what are you craving?🙃</h2>
+                                                <p style="font-weight: 500;"></p>
+                                                <p class="red">Burgers, Shawarmas, Jollof rice, or pounded yam? Get all
+                                                    of these and
                                                     more with FoodCourt! Here are some food brands where you can find
                                                     delicious and great-tasting food. Exclusively on FoodCourt!
                                                 </p>
@@ -72,331 +336,268 @@
 
 
                         <!-- the rows -->
-                        <tr>
-                            <td class="td">
 
-                                <center class="wrapper">
+                        <tr>
+                            <td class="BODY">
+                                <table width="100%">
+
+
+                                    <tr>
+                                        <td>
+                                            <center class="wrapper">
+                                                <table class="widthh">
+                                                    <tr>
+                                                        <td class="image">
+
+                                                            <picture class="cloud">
+                                                                <source
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673623104/Picture_here_liion8.png"
+                                                                    media="(prefers-color-scheme:dark)">
+                                                                <img class="cloud"
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673623035/Picture_here_zlf5he.png">
+                                                            </picture>
+
+
+
+
+
+                                                        </td>
+                                                    </tr>
+
+
+
+                                                </table>
+                                            </center>
+                                        </td>
+                                    </tr>
+
 
                                     <!-- first row -->
-                                    <table width="85%" class="icons">
-                                        <tr>
-                                            <td class="two-columns">
-
-                                                
-                                                <table class="first-column">
+                                    <tr>
+                                        <td>
+                                            <center class="wrapper">
+                                                <table class="widthh">
                                                     <tr>
                                                         <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td style="display: flex;">
-
-                                                                        <table class="img-div">
-                                                                            <tr>
-                                                                                <td id="theLogo" >
-                                                                                    <!-- <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/sunny-side_ybosag.png"
-                                                                                        alt="first-coin"> -->
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                        <table class="content-div">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <!-- <p class="header">Sunnyside Club</p> -->
-                                                                                    <p class="header" id="heading"></p>
-                                                                                    <p class="text" id="description"></p>
-                                                                                    <!-- <p class="text">Treat yourself each
-                                                                                        day to a
-                                                                                        morning
-                                                                                        of bliss with any of our simply
-                                                                                        delicious toast, waffles,
-                                                                                        pancakes,
-                                                                                        sandwiches, and more!</p> -->
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                    </td>
-                                                                </tr>
-
-
-                                                            </table>
+                                                            <p class="header">Sunnyside Club</p>
+                                                            <p>Treat yourself each day to a morning of bliss with any of
+                                                                our simply delicious toast, waffles, pancakes,
+                                                                sandwiches, and more!</p>
                                                         </td>
                                                     </tr>
-                                                </table>
 
 
-                                                <table class="second-column">
+
                                                     <tr>
-                                                        <td >
-                                                            <div id="theimage" class="picture"></div>
-                                                            <!-- <img class="picture"
-                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/first-pic_jckkgp.png"
-                                                                alt="first-coin"> -->
+                                                        <td class="image">
+
+
+                                                            <picture class="cloud">
+                                                                <source
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
+                                                                    media="(prefers-color-scheme:dark)">
+                                                                <img class="cloud"
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                            </picture>
+
                                                         </td>
                                                     </tr>
+
                                                 </table>
-
-                                            </td>
-
-
-                                        </tr>
-                                    </table>
-
-
+                                            </center>
+                                        </td>
+                                    </tr>
 
                                     <!-- second row -->
-                                    <table width="85%" class="icons">
-                                        <tr>
-                                            <td class="two-columns">
-
-                                                <table class="first-column">
+                                    <tr>
+                                        <td>
+                                            <center class="wrapper">
+                                                <table class="widthh">
                                                     <tr>
                                                         <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td style="display: flex;">
-
-                                                                        <table class="img-div">
-                                                                            <tr>
-                                                                                <td id="2nd_Logo">
-                                                                                    <!-- <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/jollof_mbdl3e.png"
-                                                                                        alt="first-coin"> -->
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                        <table class="content-div">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <!-- <p class="header">Jollof and Co.</p> -->
-                                                                                    <p id="2nd_header"></p>
-                                                                                    <!-- <p class="text">Savour the true
-                                                                                        Jollof experience. From the
-                                                                                        smokey and spicy Jollof rice to
-                                                                                        pasta, Asaro, and more, you’re
-                                                                                        sure gonna be back for more!</p> -->
-                                                                                    <p class="text" id="2nd_description"></p>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                    </td>
-                                                                </tr>
-
-
-                                                            </table>
+                                                            <p class="header">Jollof and Co.</p>
+                                                            <p>Savour the true Jollof experience. From the smokey and
+                                                                spicy Jollof rice to pasta, Asaro, and more, you’re sure
+                                                                gonna be back for more!</p>
                                                         </td>
                                                     </tr>
-                                                </table>
 
 
-                                                <table class="second-column">
+
                                                     <tr>
-                                                        <td>
-                                                            <div id="2nd_theimage" class="picture"></div>
-                                                            <!-- <img class="picture"
-                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/second-pic_fkl6dn.png"
-                                                                alt="first-coin"> -->
+                                                        <td class="image">
+
+                                                            <picture class="cloud">
+                                                                <source
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
+                                                                    media="(prefers-color-scheme:dark)">
+                                                                <img class="cloud"
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                            </picture>
+
                                                         </td>
                                                     </tr>
+
                                                 </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-
+                                            </center>
+                                        </td>
+                                    </tr>
 
                                     <!-- third row -->
-                                    <table width="85%" class="icons">
-                                        <tr>
-                                            <td class="two-columns">
-
-                                                <table class="first-column">
+                                    <tr>
+                                        <td>
+                                            <center class="wrapper">
+                                                <table class="widthh">
                                                     <tr>
                                                         <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td style="display: flex;">
-
-                                                                        <table class="img-div">
-                                                                            <tr>
-                                                                                <td id="third_coin">
-                                                                                    <!-- <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/wrap_owrrrt.png"
-                                                                                        alt="first-coin"> -->
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                        <table class="content-div">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <!-- <p class="header">Wrap City</p> -->
-                                                                                    <p class="header" id="third_header"></p>
-                                                                                    <!-- <p class="text">Experience the
-                                                                                        widest range of Shawarma flavors
-                                                                                        here. Spiced up, juicy, and well
-                                                                                        seasoned, just how you like it!
-                                                                                    </p> -->
-                                                                                    <p class="text" id="3rd_description"></p>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                    </td>
-                                                                </tr>
-
-
-                                                            </table>
+                                                            <p class="header">Wrap City</p>
+                                                            <p>Experience the widest range of Shawarma flavors here.
+                                                                Spiced up, juicy, and well seasoned, just how you like
+                                                                it!</p>
                                                         </td>
                                                     </tr>
-                                                </table>
 
 
-                                                <table class="second-column">
+
                                                     <tr>
-                                                        <td>
-                                                            <div id="3rd_theimage" class="picture"></div>
-                                                            <!-- <img class="picture"
-                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/second-pic_fkl6dn.png"
-                                                                alt="first-coin"> -->
+                                                        <td class="image">
+                                                            <picture class="cloud">
+                                                                <source
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
+                                                                    media="(prefers-color-scheme:dark)">
+                                                                <img class="cloud"
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                            </picture>
                                                         </td>
                                                     </tr>
-                                                </table>
 
-                                            </td>
-                                        </tr>
-                                    </table>
+                                                </table>
+                                            </center>
+                                        </td>
+                                    </tr>
 
 
                                     <!-- fourth row -->
-                                    <table width="85%" class="icons">
-                                        <tr>
-                                            <td class="two-columns">
-
-                                                <table class="first-column">
+                                    <tr>
+                                        <td>
+                                            <center class="wrapper">
+                                                <table class="widthh">
                                                     <tr>
                                                         <td>
-                                                            <table>
-                                                                <tr>
-                                                                    <td style="display: flex;">
-
-                                                                        <table class="img-div">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/sweets_bvyc7q.png"
-                                                                                        alt="first-coin">
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                        <table class="content-div">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <p class="header">Sweet Treats</p>
-                                                                                    <p class="text">Satisfy your sweet
-                                                                                        tooth cravings with flavorsome
-                                                                                        treats of french toast, waffles,
-                                                                                        pancakes, and crepes dazzled
-                                                                                        with your favorite fruit and
-                                                                                        syrup toppings!</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                    </td>
-                                                                </tr>
-
-
-                                                            </table>
+                                                            <p class="header">Sweet Treats</p>
+                                                            <p>Enjoy a wholesome experience of the rich Asian culture
+                                                                through delicious and authentic Chinese dishes prepared
+                                                                to tingle your taste buds!</p>
                                                         </td>
                                                     </tr>
-                                                </table>
 
 
-                                                <table class="second-column">
+
                                                     <tr>
                                                         <td>
-                                                            <img class="picture"
-                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/fourth-pic_fireyh.png"
-                                                                alt="first-coin">
+                                                            <picture class="cloud">
+                                                                <source
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
+                                                                    media="(prefers-color-scheme:dark)">
+                                                                <img class="cloud"
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                            </picture>
                                                         </td>
                                                     </tr>
+
                                                 </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-
-
+                                            </center>
+                                        </td>
+                                    </tr>
 
                                     <!-- fifth row -->
-                                    <table width="85%" class="icons">
-                                        <tr>
-                                            <td class="two-columns">
-
-                                                <table class="first-column">
+                                    <tr>
+                                        <td>
+                                            <center class="wrapper">
+                                                <table class="widthh">
                                                     <tr>
                                                         <td>
-                                                            <table>
-
-                                                                <tr>
-                                                                    <td style="display: flex;">
-
-                                                                        <table class="img-div">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/Chow_u79zx1.png"
-                                                                                        alt="first-coin">
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                        <table class="content-div">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <p class="header">ChōW Asian</p>
-                                                                                    <p class="text">Enjoy a wholesome
-                                                                                        experience of the rich Asian
-                                                                                        culture through delicious and
-                                                                                        authentic Chinese dishes
-                                                                                        prepared to tingle your taste
-                                                                                        buds!</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                                    </td>
-                                                                </tr>
-
-                                                            </table>
+                                                            <p class="header">Chow Asian</p>
+                                                            <p>Enjoy a wholesome experience of the rich Asian culture
+                                                                through delicious and authentic Chinese dishes prepared
+                                                                to tingle your taste buds!</p>
                                                         </td>
                                                     </tr>
+
+
+
+                                                    <tr>
+                                                        <td class="image">
+                                                            <picture class="cloud">
+                                                                <source
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
+                                                                    media="(prefers-color-scheme:dark)">
+                                                                <img class="cloud"
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                            </picture>
+                                                        </td>
+                                                    </tr>
+
                                                 </table>
+                                            </center>
+                                        </td>
+                                    </tr>
 
 
-                                                <table class="second-column">
+                                    <!-- sixth row -->
+
+                                    <tr>
+                                        <td>
+                                            <center class="wrapper">
+                                                <table class="widthh">
                                                     <tr>
                                                         <td>
-                                                            <img class="picture"
-                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672226960/fifth-pic_kzcgjw.png"
-                                                                alt="first-coin">
+                                                            <p class="header">Cocktail Club</p>
+                                                            <p>Whether you’re looking for a classy cocktail or something
+                                                                completely new, we have something for you! Enjoy our
+                                                                selection of drinks hand crafted by some of the best
+                                                                Mixologists at The Cocktail club.</p>
                                                         </td>
                                                     </tr>
-                                                </table>
 
-                                            </td>
-                                        </tr>
-                                    </table>
+
+
+                                                    <tr>
+                                                        <td class="image">
+                                                            <picture class="cloud">
+                                                                <source
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
+                                                                    media="(prefers-color-scheme:dark)">
+                                                                <img class="cloud"
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                            </picture>
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+                                            </center>
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                                </table>
+                            </td>
+                        </tr>
+
+
+
 
 
                         <!-- ending note -->
                         <tr>
                             <td>
                                 <center class="wrapper">
-                                    <table width="85%">
+                                    <table width="90%">
                                         <tr>
-                                            <td>
+                                            <td style="padding-bottom: 70px;">
                                                 <p>To get to know about more food brands offering yummy meals on the
                                                     FoodCourt app, please visit
                                                     <a style="color: #0EA3FD;" href="#">getFoodCourt.com</a>
@@ -414,76 +615,154 @@
 
 
                         <!-- footer -->
-                        <tr>
-                            <td align="center" style='text-align:center; padding-top: 20px;'>
-                                <center class="wrapper">
-                                    <table width="75%" align="center" style='text-align:center' border="0"
-                                        cellspacing="0" cellpadding="0">
-                                        <tr>
-                                            <td align="center" class="icons" style="text-align: center;">
+                        <table class="last_table" style="border-radius: 10px; width: 100%;">
 
-                                                <a href="#" class="icon"><img class="photo"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png"
-                                                        alt="" width=""></a>
-                                                <a href="#" class="icon"><img class="photo"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png"
-                                                        alt="" width=""></a>
-                                                <a href="#" class="icon"><img class="photo"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png"
-                                                        alt="" width=""></a>
-                                                <a href="#" class="icon"><img class="photo"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png"
-                                                        alt="" width=""></a>
-                                                <a href="#" class="icon"><img class="photo"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png"
-                                                        alt="" width=""></a>
-                                                <a href="#" class="icon"><img class="photo"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png"
-                                                        alt="" width=""></a>
+                            <tr>
+                                <td align="center" style='padding-top: 20px;'>
+                                    <center class="wrapper">
+                                        <table class="widthh" align="center" style='text-align:center' border="0"
+                                            cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="center" class="icons" style="text-align: center;">
+                                                    <picture class="icon">
+                                                        <source class="photo"
+                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_8_yaoidk.png"
+                                                            media="(prefers-color-scheme:dark)">
+                                                        <a href="#"><img class="photo"
+                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png"></a>
+                                                    </picture>
 
 
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </center>
-                            </td>
-                        </tr>
 
 
-                        <tr>
-                            <td  align="center" style='text-align:center; padding-bottom: 40px;'>
-                                <center class="wrapper" id="center">
-                                    <table width="85%" align="center" style='text-align:center'  border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                            <td align="center" style="text-align: center;">
-                                                <p class="pp">Copyright © 2022 Cokitchen Technologies,
-                                                    All rights
-                                                    reserved. </p>
-                                            </td>
-                                        </tr>
 
-                                        <tr>
-                                            <td align="center" style="text-align: center;">
-
-                                                <p class="pp" id="center_two">
-                                                    Want to change how you receive these mails?
-
-                                                    <span class="pp" style="font-weight: 500;"> You can <a href="#">update your
-                                                        preferences</a> <span style="font-weight: 400;">or</span> <a class="pp" href="#">unsubscribe from this
-                                                        list</a> </span>
-
-                                                </p>
+                                                    <picture class="icon">
+                                                        <source class="photo"
+                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_7_kdfymg.png"
+                                                            media="(prefers-color-scheme:dark)">
+                                                        <a href="#"><img class="photo"
+                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png"></a>
+                                                    </picture>
 
 
-                                            </td>
-                                        </tr>
 
 
-                                    </table>
-                                </center>
-                            </td>
-                        </tr>
-                
+
+
+
+                                                    <picture class="icon">
+                                                        <source class="photo"
+                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_6_guyevb.png"
+                                                            media="(prefers-color-scheme:dark)">
+                                                        <a href="#"><img class="photo"
+                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png"></a>
+
+                                                    </picture>
+
+
+
+
+
+                                                    <picture class="icon">
+                                                        <source class="photo"
+                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_2_vxts5i.png"
+                                                            media="(prefers-color-scheme:dark)">
+                                                        <a href="#"><img class="photo"
+                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png"></a>
+                                                    </picture>
+
+
+
+
+
+                                                    <picture class="icon">
+                                                        <source class="photo"
+                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_4_gmers3.png"
+                                                            media="(prefers-color-scheme:dark)">
+                                                        <a href="#"> <img class="photo"
+                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png"></a>
+                                                    </picture>
+
+
+
+
+
+                                                    <picture class="icon">
+                                                        <source class="photo"
+                                                            srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_3_lapo1e.png"
+                                                            media="(prefers-color-scheme:dark)">
+                                                        <a href="#"> <img class="photo"
+                                                                src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png"></a>
+                                                    </picture>
+
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td align="center" style='text-align:center; padding-bottom: 40px;'>
+                                    <center class="wrapper" id="center">
+                                        <table width="90%" align="center" style='text-align:center' border="0"
+                                            cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="center" style="text-align: center;">
+                                                    <p class="P_tag">Copyright © 2022 Cokitchen Technologies,
+                                                        All rights
+                                                        reserved. </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="center" style="text-align: center;">
+
+                                                    <p class="P_tag" id="center_two">
+                                                        Want to change how you receive these mails?
+
+                                                        <span class="P_tag" style="font-weight: 500;"> You can <a
+                                                                href="#">update your
+                                                                preferences</a> <span
+                                                                style="font-weight: 400;">or</span> <a class="P_tag"
+                                                                href="#">unsubscribe from this
+                                                                list</a> </span>
+
+                                                    </p>
+
+
+                                                </td>
+                                            </tr>
+
+
+
+
+                                        </table>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                </td>
+            </tr>
+
+
+        </table>
+
+
+
+
+
+    </center>
+    </td>
+    </tr>
+
+    </center>
+
+
 
 
     </center>
@@ -506,1328 +785,6 @@
     </center>
 
 
-
-    <script>
-
-        const mealsArray = [
-
-            [
-                {
-                    "brand": {
-                        "id": "024ab4dc-a399-4096-b8a9-7ede8dc62c3e",
-                        "new": false,
-                        "logo": "http://res.cloudinary.com/cokitchen/image/upload/v1659884055/Wrap_City_Logo_2_zm49cr.png",
-                        "name": "Wrap City",
-                        "active": true,
-                        "images": [
-                            "http://res.cloudinary.com/cokitchen/image/upload/v1659918235/xnwnqjrr1fsbgiobx3zc.jpg"
-                        ],
-                        "pop_up": false,
-                        "summary": "Delicious Shawarma, Wraps & More!",
-                        "item_type": "FOOD",
-                        "brand_tags": [],
-                        "created_at": "2022-08-07T11:37:46.526Z",
-                        "short_text": "Shawarma",
-                        "updated_at": "2022-08-07T11:37:46.526Z",
-                        "coming_soon": false,
-                        "description": "Serving a variety of delicious wraps, shawarma, loaded fries, chicken & more! ",
-                        "popup_color": null,
-                        "closing_time": null,
-                        "cokitchen_id": "85c7d173-56ed-44c8-8335-ef0eecabf454",
-                        "opening_time": null,
-                        "brand_keywords": [],
-                        "coming_soon_text": null,
-                        "posist_customer_key": "zLj8ohVnnpf3KfG",
-                        "brand_business_metadatas": [],
-                        "brand_descriptive_metadatas": []
-                    },
-                    "meals": [
-                        {
-                            "id": "0ad696e8-9f29-4f00-bc8f-4e51586de3de",
-                            "new": false,
-                            "name": "Chicken Suya Shawarma",
-                            "brand": {
-                                "id": "024ab4dc-a399-4096-b8a9-7ede8dc62c3e",
-                                "new": false,
-                                "logo": "http://res.cloudinary.com/cokitchen/image/upload/v1659884055/Wrap_City_Logo_2_zm49cr.png",
-                                "name": "Wrap City",
-                                "active": true,
-                                "images": [
-                                    "http://res.cloudinary.com/cokitchen/image/upload/v1659918235/xnwnqjrr1fsbgiobx3zc.jpg"
-                                ],
-                                "pop_up": false,
-                                "summary": "Delicious Shawarma, Wraps & More!",
-                                "item_type": "FOOD",
-                                "brand_tags": [],
-                                "created_at": "2022-08-07T11:37:46.526Z",
-                                "short_text": "Shawarma",
-                                "updated_at": "2022-08-07T11:37:46.526Z",
-                                "coming_soon": false,
-                                "description": "Serving a variety of delicious wraps, shawarma, loaded fries, chicken & more! ",
-                                "popup_color": null,
-                                "closing_time": null,
-                                "cokitchen_id": "85c7d173-56ed-44c8-8335-ef0eecabf454",
-                                "opening_time": null,
-                                "brand_keywords": [],
-                                "coming_soon_text": null,
-                                "posist_customer_key": "zLj8ohVnnpf3KfG",
-                                "brand_business_metadatas": [],
-                                "brand_descriptive_metadatas": []
-                            },
-                            "active": true,
-                            "addons": [
-                                {
-                                    "id": "63b6fbff-70ac-44dd-97f9-8e7f6ee9b2a8",
-                                    "amount": 600,
-                                    "images": [],
-                                    "meal_id": "0ad696e8-9f29-4f00-bc8f-4e51586de3de",
-                                    "is_combo": false,
-                                    "position": -1,
-                                    "quantity": 1,
-                                    "meal_data": {
-                                        "id": "e2139af8-3cd0-466a-ac39-d2342e8f6ead",
-                                        "new": false,
-                                        "name": "1 Sausage",
-                                        "active": true,
-                                        "amount": "300",
-                                        "images": [],
-                                        "alcohol": false,
-                                        "item_no": null,
-                                        "summary": null,
-                                        "brand_id": "024ab4dc-a399-4096-b8a9-7ede8dc62c3e",
-                                        "is_addon": true,
-                                        "is_combo": false,
-                                        "position": -1,
-                                        "home_page": false,
-                                        "item_type": "FOOD",
-                                        "meal_tags": [],
-                                        "created_at": "2022-08-07T13:58:19.728Z",
-                                        "updated_at": "2022-08-07T13:58:19.728Z",
-                                        "description": null,
-                                        "minimum_age": "0",
-                                        "posist_data": {},
-                                        "available_no": "INFINITE",
-                                        "meal_keywords": [],
-                                        "meal_category_id": "9be0d4dd-f0b6-47eb-afe5-eb72f7bf8f8a",
-                                        "preparation_time": "15",
-                                        "nutrional_description": null,
-                                        "availability_soon_date": null,
-                                        "availability_soon_time": null,
-                                        "meal_allergy_metadatas": [],
-                                        "meal_dietary_metadatas": [],
-                                        "availability_soon_date_": null,
-                                        "meal_business_metadatas": [],
-                                        "nutritional_description": null,
-                                        "meal_descriptive_metadatas": [],
-                                        "availability_soon_date_data": null
-                                    },
-                                    "created_at": "2022-08-07T13:58:19.802Z",
-                                    "updated_at": "2022-08-07T13:58:19.802Z",
-                                    "posist_data": {},
-                                    "meal_addon_id": "e2139af8-3cd0-466a-ac39-d2342e8f6ead",
-                                    "meal_addon_category_id": "f1b9d093-8c46-4d70-b020-b604d3a57e14"
-                                },
-                                {
-                                    "id": "79e6ed59-c78a-4521-9ef5-bd8e814de503",
-                                    "amount": 0,
-                                    "images": [],
-                                    "meal_id": "0ad696e8-9f29-4f00-bc8f-4e51586de3de",
-                                    "is_combo": false,
-                                    "position": -1,
-                                    "quantity": 1,
-                                    "meal_data": {
-                                        "id": "5db10068-0917-4614-8baf-da06c49d5c24",
-                                        "new": false,
-                                        "name": "Medium Spicy",
-                                        "active": true,
-                                        "amount": "0",
-                                        "images": [],
-                                        "alcohol": false,
-                                        "item_no": null,
-                                        "summary": null,
-                                        "brand_id": "024ab4dc-a399-4096-b8a9-7ede8dc62c3e",
-                                        "is_addon": true,
-                                        "is_combo": false,
-                                        "position": -1,
-                                        "home_page": false,
-                                        "item_type": "FOOD",
-                                        "meal_tags": [],
-                                        "created_at": "2022-08-07T13:58:20.995Z",
-                                        "updated_at": "2022-08-07T13:58:20.995Z",
-                                        "description": null,
-                                        "minimum_age": "0",
-                                        "posist_data": {},
-                                        "available_no": "INFINITE",
-                                        "meal_keywords": [],
-                                        "meal_category_id": "9be0d4dd-f0b6-47eb-afe5-eb72f7bf8f8a",
-                                        "preparation_time": "15",
-                                        "nutrional_description": null,
-                                        "availability_soon_date": null,
-                                        "availability_soon_time": null,
-                                        "meal_allergy_metadatas": [],
-                                        "meal_dietary_metadatas": [],
-                                        "availability_soon_date_": null,
-                                        "meal_business_metadatas": [],
-                                        "nutritional_description": null,
-                                        "meal_descriptive_metadatas": [],
-                                        "availability_soon_date_data": null
-                                    },
-                                    "created_at": "2022-08-07T13:58:21.070Z",
-                                    "updated_at": "2022-08-07T13:58:21.070Z",
-                                    "posist_data": {},
-                                    "meal_addon_id": "5db10068-0917-4614-8baf-da06c49d5c24",
-                                    "meal_addon_category_id": "293e41cc-9c4f-4f12-9aa2-df38b48e3974"
-                                },
-                                {
-                                    "id": "52de57b5-1ab0-4897-a463-791d987bfac5",
-                                    "amount": 0,
-                                    "images": [],
-                                    "meal_id": "0ad696e8-9f29-4f00-bc8f-4e51586de3de",
-                                    "is_combo": false,
-                                    "position": -1,
-                                    "quantity": 1,
-                                    "meal_data": {
-                                        "id": "07e13c00-2124-4c3a-a6cb-c24baa768e63",
-                                        "new": false,
-                                        "name": "No Cheese ",
-                                        "active": true,
-                                        "amount": "0",
-                                        "images": [],
-                                        "alcohol": false,
-                                        "item_no": null,
-                                        "summary": null,
-                                        "brand_id": "024ab4dc-a399-4096-b8a9-7ede8dc62c3e",
-                                        "is_addon": true,
-                                        "is_combo": false,
-                                        "position": -1,
-                                        "home_page": false,
-                                        "item_type": "FOOD",
-                                        "meal_tags": [],
-                                        "created_at": "2022-08-07T13:58:21.817Z",
-                                        "updated_at": "2022-08-07T13:58:21.817Z",
-                                        "description": null,
-                                        "minimum_age": "0",
-                                        "posist_data": {},
-                                        "available_no": "INFINITE",
-                                        "meal_keywords": [],
-                                        "meal_category_id": "9be0d4dd-f0b6-47eb-afe5-eb72f7bf8f8a",
-                                        "preparation_time": "15",
-                                        "nutrional_description": null,
-                                        "availability_soon_date": null,
-                                        "availability_soon_time": null,
-                                        "meal_allergy_metadatas": [],
-                                        "meal_dietary_metadatas": [],
-                                        "availability_soon_date_": null,
-                                        "meal_business_metadatas": [],
-                                        "nutritional_description": null,
-                                        "meal_descriptive_metadatas": [],
-                                        "availability_soon_date_data": null
-                                    },
-                                    "created_at": "2022-08-07T13:58:21.893Z",
-                                    "updated_at": "2022-08-07T13:58:21.893Z",
-                                    "posist_data": {},
-                                    "meal_addon_id": "07e13c00-2124-4c3a-a6cb-c24baa768e63",
-                                    "meal_addon_category_id": "ace1ea13-45b4-4f5f-9eed-a9d2dcc7911b"
-                                },
-                                {
-                                    "id": "3aaa7bba-b973-494a-b4b3-c9a27d10d159",
-                                    "amount": 0,
-                                    "images": [],
-                                    "meal_id": "0ad696e8-9f29-4f00-bc8f-4e51586de3de",
-                                    "is_combo": false,
-                                    "position": -1,
-                                    "quantity": 1,
-                                    "meal_data": {
-                                        "id": "b3fc62b1-3099-48d6-9377-01402078a5a3",
-                                        "new": false,
-                                        "name": "No Bacon",
-                                        "active": true,
-                                        "amount": "0",
-                                        "images": [],
-                                        "alcohol": false,
-                                        "item_no": null,
-                                        "summary": null,
-                                        "brand_id": "024ab4dc-a399-4096-b8a9-7ede8dc62c3e",
-                                        "is_addon": true,
-                                        "is_combo": false,
-                                        "position": -1,
-                                        "home_page": false,
-                                        "item_type": "FOOD",
-                                        "meal_tags": [],
-                                        "created_at": "2022-08-07T13:58:22.645Z",
-                                        "updated_at": "2022-08-07T13:58:22.645Z",
-                                        "description": null,
-                                        "minimum_age": "0",
-                                        "posist_data": {},
-                                        "available_no": "INFINITE",
-                                        "meal_keywords": [],
-                                        "meal_category_id": "9be0d4dd-f0b6-47eb-afe5-eb72f7bf8f8a",
-                                        "preparation_time": "15",
-                                        "nutrional_description": null,
-                                        "availability_soon_date": null,
-                                        "availability_soon_time": null,
-                                        "meal_allergy_metadatas": [],
-                                        "meal_dietary_metadatas": [],
-                                        "availability_soon_date_": null,
-                                        "meal_business_metadatas": [],
-                                        "nutritional_description": null,
-                                        "meal_descriptive_metadatas": [],
-                                        "availability_soon_date_data": null
-                                    },
-                                    "created_at": "2022-08-07T13:58:22.720Z",
-                                    "updated_at": "2022-08-07T13:58:22.720Z",
-                                    "posist_data": {},
-                                    "meal_addon_id": "b3fc62b1-3099-48d6-9377-01402078a5a3",
-                                    "meal_addon_category_id": "826e3198-f4ed-472e-84d7-9f347b84630b"
-                                }
-                            ],
-                            "amount": "2700",
-                            "images": [
-                                "http://res.cloudinary.com/cokitchen/image/upload/v1659916788/v6l3mvtbfuvejjzeait4.jpg"
-                            ],
-                            "alcohol": false,
-                            "item_no": null,
-                            "summary": null,
-                            "brand_id": "024ab4dc-a399-4096-b8a9-7ede8dc62c3e",
-                            "is_addon": false,
-                            "is_combo": false,
-                            "position": 1,
-                            "quantity": 2,
-                            "home_page": false,
-                            "item_type": "FOOD",
-                            "meal_tags": [],
-                            "created_at": "2022-08-07T13:58:18.898Z",
-                            "order_note": "",
-                            "updated_at": "2022-08-07T13:58:18.898Z",
-                            "description": "Special chicken shawarma with grilled chicken suya, veg & special sauce. ",
-                            "minimum_age": "0",
-                            "posist_data": {},
-                            "available_no": "INFINITE",
-                            "meal_keywords": [],
-                            "meal_category_id": "9be0d4dd-f0b6-47eb-afe5-eb72f7bf8f8a",
-                            "preparation_time": "15",
-                            "nutrional_description": null,
-                            "availability_soon_date": null,
-                            "availability_soon_time": null,
-                            "meal_allergy_metadatas": [],
-                            "meal_dietary_metadatas": [],
-                            "availability_soon_date_": null,
-                            "meal_business_metadatas": [],
-                            "nutritional_description": "",
-                            "meal_descriptive_metadatas": [],
-                            "availability_soon_date_data": null
-                        }
-                    ],
-                    "amount": 6000
-                },
-                {
-                    "brand": {
-                        "id": "00adf6c8-2759-4c4d-8c97-d6e4bed29d50",
-                        "new": false,
-                        "logo": "http://res.cloudinary.com/cokitchen/image/upload/v1629312192/CoKitchen_-_Wing_Kings_2_pr8lfy.png",
-                        "name": "Wing Kings",
-                        "active": true,
-                        "images": [
-                            "http://res.cloudinary.com/cokitchen/image/upload/v1639681506/new-chicken-image_ir22ml.jpg"
-                        ],
-                        "pop_up": false,
-                        "summary": "Good Chicken & More!",
-                        "item_type": "FOOD",
-                        "brand_tags": [],
-                        "created_at": "2021-07-05T16:44:26.407Z",
-                        "short_text": "Chicken Shop",
-                        "updated_at": "2021-07-05T16:44:26.407Z",
-                        "coming_soon": false,
-                        "description": "The chicken joint serving delicious chicken meals, combos & platters! 🍗",
-                        "popup_color": null,
-                        "closing_time": null,
-                        "cokitchen_id": "85c7d173-56ed-44c8-8335-ef0eecabf454",
-                        "opening_time": null,
-                        "brand_keywords": [
-                            {
-                                "id": "ffddc47c-3284-4519-9e40-1a10fa689b6e",
-                                "name": "Wings"
-                            },
-                            {
-                                "id": "ef0166ac-cddc-470d-bf96-dc20a35f7d34",
-                                "name": "Casual Food"
-                            },
-                            {
-                                "id": "6640de08-e9de-4dbb-98c6-33eee798e164",
-                                "name": "Lunch"
-                            },
-                            {
-                                "id": "d76ca82e-1d83-4add-ad21-8bf6072a08f0",
-                                "name": "Dinner"
-                            },
-                            {
-                                "id": "657958b6-8cec-419b-83c6-82167730424b",
-                                "name": "Fast Food"
-                            },
-                            {
-                                "id": "a45da788-5a9f-434b-851f-d01ce4ef4187",
-                                "name": "Quick Bites"
-                            },
-                            {
-                                "id": "59f54095-38e1-4cc5-abe9-a296859c29f0",
-                                "name": "Chicken"
-                            }
-                        ],
-                        "coming_soon_text": null,
-                        "posist_customer_key": "024c476e675c0d6f7bb98bd7efb6b08b32b2c1dc68e305d1e15e5821d9b59ce6a654853cdcd893303bbf4af2c686d8d9",
-                        "brand_business_metadatas": [],
-                        "brand_descriptive_metadatas": [
-                            {
-                                "id": "d8db43e3-5c90-49b2-ab3e-1e349eb8bbb2",
-                                "name": "Good for sharing"
-                            },
-                            {
-                                "id": "31134c74-8b1f-455f-ab27-30126d98bd31",
-                                "name": "Games night"
-                            },
-                            {
-                                "id": "885677f9-1680-4f79-b3f3-d50b7e00c60f",
-                                "name": "Group of friends"
-                            },
-                            {
-                                "id": "1ee6921d-50c5-4345-b119-74d00c308fff",
-                                "name": "Group of people"
-                            },
-                            {
-                                "id": "ef23abc1-923e-431a-a3e1-f595a0438205",
-                                "name": "Party food"
-                            },
-                            {
-                                "id": "c45f9c80-5226-4b2c-aacb-fd59544f671c",
-                                "name": "Party"
-                            },
-                            {
-                                "id": "2cbf85b6-3d0d-40cf-8738-1f3affe77efa",
-                                "name": "Good for groups"
-                            },
-                            {
-                                "id": "4516ae47-1dda-48d5-9db9-2dcfff80c1d1",
-                                "name": "Large order"
-                            }
-                        ]
-                    },
-                    "meals": [
-                        {
-                            "id": "737ffc7b-37af-4e4a-824f-c85ecfc08075",
-                            "new": false,
-                            "name": "Peppered Chicken Wings",
-                            "brand": {
-                                "id": "00adf6c8-2759-4c4d-8c97-d6e4bed29d50",
-                                "new": false,
-                                "logo": "http://res.cloudinary.com/cokitchen/image/upload/v1629312192/CoKitchen_-_Wing_Kings_2_pr8lfy.png",
-                                "name": "Wing Kings",
-                                "active": true,
-                                "images": [
-                                    "http://res.cloudinary.com/cokitchen/image/upload/v1639681506/new-chicken-image_ir22ml.jpg"
-                                ],
-                                "pop_up": false,
-                                "summary": "Good Chicken & More!",
-                                "item_type": "FOOD",
-                                "brand_tags": [],
-                                "created_at": "2021-07-05T16:44:26.407Z",
-                                "short_text": "Chicken Shop",
-                                "updated_at": "2021-07-05T16:44:26.407Z",
-                                "coming_soon": false,
-                                "description": "The chicken joint serving delicious chicken meals, combos & platters! 🍗",
-                                "popup_color": null,
-                                "closing_time": null,
-                                "cokitchen_id": "85c7d173-56ed-44c8-8335-ef0eecabf454",
-                                "opening_time": null,
-                                "brand_keywords": [
-                                    {
-                                        "id": "ffddc47c-3284-4519-9e40-1a10fa689b6e",
-                                        "name": "Wings"
-                                    },
-                                    {
-                                        "id": "ef0166ac-cddc-470d-bf96-dc20a35f7d34",
-                                        "name": "Casual Food"
-                                    },
-                                    {
-                                        "id": "6640de08-e9de-4dbb-98c6-33eee798e164",
-                                        "name": "Lunch"
-                                    },
-                                    {
-                                        "id": "d76ca82e-1d83-4add-ad21-8bf6072a08f0",
-                                        "name": "Dinner"
-                                    },
-                                    {
-                                        "id": "657958b6-8cec-419b-83c6-82167730424b",
-                                        "name": "Fast Food"
-                                    },
-                                    {
-                                        "id": "a45da788-5a9f-434b-851f-d01ce4ef4187",
-                                        "name": "Quick Bites"
-                                    },
-                                    {
-                                        "id": "59f54095-38e1-4cc5-abe9-a296859c29f0",
-                                        "name": "Chicken"
-                                    }
-                                ],
-                                "coming_soon_text": null,
-                                "posist_customer_key": "024c476e675c0d6f7bb98bd7efb6b08b32b2c1dc68e305d1e15e5821d9b59ce6a654853cdcd893303bbf4af2c686d8d9",
-                                "brand_business_metadatas": [],
-                                "brand_descriptive_metadatas": [
-                                    {
-                                        "id": "d8db43e3-5c90-49b2-ab3e-1e349eb8bbb2",
-                                        "name": "Good for sharing"
-                                    },
-                                    {
-                                        "id": "31134c74-8b1f-455f-ab27-30126d98bd31",
-                                        "name": "Games night"
-                                    },
-                                    {
-                                        "id": "885677f9-1680-4f79-b3f3-d50b7e00c60f",
-                                        "name": "Group of friends"
-                                    },
-                                    {
-                                        "id": "1ee6921d-50c5-4345-b119-74d00c308fff",
-                                        "name": "Group of people"
-                                    },
-                                    {
-                                        "id": "ef23abc1-923e-431a-a3e1-f595a0438205",
-                                        "name": "Party food"
-                                    },
-                                    {
-                                        "id": "c45f9c80-5226-4b2c-aacb-fd59544f671c",
-                                        "name": "Party"
-                                    },
-                                    {
-                                        "id": "2cbf85b6-3d0d-40cf-8738-1f3affe77efa",
-                                        "name": "Good for groups"
-                                    },
-                                    {
-                                        "id": "4516ae47-1dda-48d5-9db9-2dcfff80c1d1",
-                                        "name": "Large order"
-                                    }
-                                ]
-                            },
-                            "active": true,
-                            "addons": [
-                                {
-                                    "id": "56a352ad-12fd-407c-b298-c07c38aace91",
-                                    "amount": 0,
-                                    "images": [],
-                                    "meal_id": "737ffc7b-37af-4e4a-824f-c85ecfc08075",
-                                    "is_combo": false,
-                                    "position": -1,
-                                    "quantity": 1,
-                                    "meal_data": {
-                                        "id": "28aba131-0bcc-497b-8950-7964f6e314eb",
-                                        "new": false,
-                                        "name": "6 pieces",
-                                        "active": true,
-                                        "amount": "0",
-                                        "images": [],
-                                        "alcohol": false,
-                                        "item_no": 73,
-                                        "summary": null,
-                                        "brand_id": "00adf6c8-2759-4c4d-8c97-d6e4bed29d50",
-                                        "is_addon": true,
-                                        "is_combo": false,
-                                        "position": -1,
-                                        "home_page": false,
-                                        "item_type": "FOOD",
-                                        "meal_tags": [],
-                                        "created_at": "2021-08-18T16:36:12.264Z",
-                                        "updated_at": "2021-08-18T16:36:12.264Z",
-                                        "description": "",
-                                        "minimum_age": "0",
-                                        "posist_data": {
-                                            "_id": "611ca5e03638ed8c46273787",
-                                            "name": "6 pieces",
-                                            "rate": 0,
-                                            "taxes": [],
-                                            "images": [],
-                                            "status": "ACTIVE",
-                                            "isAddOn": true,
-                                            "isCombo": false,
-                                            "itemTag": "611a360b4cf77e9a5bbe64b0",
-                                            "category": {
-                                                "_id": "611c9f55238c2c16780adbbe",
-                                                "languages": [],
-                                                "categoryName": "Number of pieces",
-                                                "superCategory": {
-                                                    "_id": "611c9f544cf77e9a5bbe694f",
-                                                    "superCategoryName": "ADDONS"
-                                                }
-                                            },
-                                            "mapItems": [],
-                                            "languages": [],
-                                            "identifier": "0389c42b60",
-                                            "itemNumber": "73",
-                                            "description": "",
-                                            "ingredients": [],
-                                            "brandItem_id": "611ca30f3638ed8c46273758",
-                                            "itemVariants": [],
-                                            "statusChanged": true,
-                                            "activationUser": {
-                                                "_id": "6043b3ba74d7a1c14792a73d",
-                                                "username": "cokitchen_cokitchen"
-                                            },
-                                            "preparationTime": {
-                                                "time": 10
-                                            },
-                                            "nutritionalFacts": [],
-                                            "addOnAsNormalItem": false,
-                                            "nutritionalEntities": [],
-                                            "activationStatusLastChangedOn": "2021-08-18T06:17:16.817Z"
-                                        },
-                                        "available_no": "INFINITE",
-                                        "meal_keywords": [],
-                                        "meal_category_id": "c6917b43-3872-4840-b464-48b466b8cf68",
-                                        "preparation_time": "10",
-                                        "nutrional_description": null,
-                                        "availability_soon_date": null,
-                                        "availability_soon_time": null,
-                                        "meal_allergy_metadatas": [],
-                                        "meal_dietary_metadatas": [],
-                                        "availability_soon_date_": null,
-                                        "meal_business_metadatas": [],
-                                        "nutritional_description": null,
-                                        "meal_descriptive_metadatas": [],
-                                        "availability_soon_date_data": null
-                                    },
-                                    "created_at": "2021-08-18T16:36:14.959Z",
-                                    "updated_at": "2021-08-18T16:36:14.959Z",
-                                    "posist_data": {},
-                                    "meal_addon_id": "28aba131-0bcc-497b-8950-7964f6e314eb",
-                                    "meal_addon_category_id": "c23ee786-a6ea-4a2c-b925-b0c92ba2b161"
-                                },
-                                {
-                                    "id": "b737e441-a216-45f0-8331-0a12b7ef935c",
-                                    "amount": 0,
-                                    "images": [],
-                                    "meal_id": "737ffc7b-37af-4e4a-824f-c85ecfc08075",
-                                    "is_combo": false,
-                                    "position": -1,
-                                    "quantity": 1,
-                                    "meal_data": {
-                                        "id": "0c87de25-c3c6-4f27-b50e-b2e5c4be40b6",
-                                        "new": false,
-                                        "name": "No drizzle pls.",
-                                        "active": true,
-                                        "amount": "0",
-                                        "images": [],
-                                        "alcohol": false,
-                                        "item_no": 77,
-                                        "summary": null,
-                                        "brand_id": "00adf6c8-2759-4c4d-8c97-d6e4bed29d50",
-                                        "is_addon": true,
-                                        "is_combo": false,
-                                        "position": -1,
-                                        "home_page": false,
-                                        "item_type": "FOOD",
-                                        "meal_tags": [],
-                                        "created_at": "2021-08-18T16:36:14.404Z",
-                                        "updated_at": "2021-08-18T16:36:14.404Z",
-                                        "description": "",
-                                        "minimum_age": "0",
-                                        "posist_data": {
-                                            "_id": "611ca5e0aac3945271ac9a30",
-                                            "name": "No drizzle pls.",
-                                            "rate": 0,
-                                            "taxes": [],
-                                            "images": [],
-                                            "status": "ACTIVE",
-                                            "isAddOn": true,
-                                            "isCombo": false,
-                                            "itemTag": "611c9e233638ed8c462736bd",
-                                            "category": {
-                                                "_id": "611ca0e04cf77e9a5bbe6953",
-                                                "languages": [],
-                                                "categoryName": "Add a drizzle of",
-                                                "superCategory": {
-                                                    "_id": "611c9f544cf77e9a5bbe694f",
-                                                    "superCategoryName": "ADDONS"
-                                                }
-                                            },
-                                            "mapItems": [],
-                                            "languages": [],
-                                            "identifier": "8cdf55f90e",
-                                            "itemNumber": "77",
-                                            "description": "",
-                                            "ingredients": [],
-                                            "brandItem_id": "611ca30f238c2c16780adc2e",
-                                            "itemVariants": [],
-                                            "statusChanged": true,
-                                            "activationUser": {
-                                                "_id": "6043b3ba74d7a1c14792a73d",
-                                                "username": "cokitchen_cokitchen"
-                                            },
-                                            "preparationTime": {
-                                                "time": 10
-                                            },
-                                            "nutritionalFacts": [],
-                                            "addOnAsNormalItem": false,
-                                            "nutritionalEntities": [],
-                                            "activationStatusLastChangedOn": "2021-08-18T06:17:16.817Z"
-                                        },
-                                        "available_no": "INFINITE",
-                                        "meal_keywords": [],
-                                        "meal_category_id": "72e8a199-2d5c-40f6-bb24-53c29f756057",
-                                        "preparation_time": "10",
-                                        "nutrional_description": null,
-                                        "availability_soon_date": null,
-                                        "availability_soon_time": null,
-                                        "meal_allergy_metadatas": [],
-                                        "meal_dietary_metadatas": [],
-                                        "availability_soon_date_": null,
-                                        "meal_business_metadatas": [],
-                                        "nutritional_description": null,
-                                        "meal_descriptive_metadatas": [],
-                                        "availability_soon_date_data": null
-                                    },
-                                    "created_at": "2021-08-18T16:36:15.052Z",
-                                    "updated_at": "2021-08-18T16:36:15.052Z",
-                                    "posist_data": {},
-                                    "meal_addon_id": "0c87de25-c3c6-4f27-b50e-b2e5c4be40b6",
-                                    "meal_addon_category_id": "f42ca9f8-8d66-4ec8-8d74-4761e421cca2"
-                                },
-                                {
-                                    "id": "4d079738-5afb-4dbf-9aba-dcfc5e24f399",
-                                    "amount": 750,
-                                    "images": [],
-                                    "meal_id": "737ffc7b-37af-4e4a-824f-c85ecfc08075",
-                                    "is_combo": false,
-                                    "position": -1,
-                                    "quantity": 1,
-                                    "meal_data": {
-                                        "id": "84549b9f-0dda-4a0b-9cae-6b62024b9588",
-                                        "new": false,
-                                        "name": "French  Fries",
-                                        "active": true,
-                                        "amount": "750",
-                                        "images": [],
-                                        "alcohol": false,
-                                        "item_no": 99,
-                                        "summary": null,
-                                        "brand_id": "00adf6c8-2759-4c4d-8c97-d6e4bed29d50",
-                                        "is_addon": true,
-                                        "is_combo": false,
-                                        "position": -1,
-                                        "home_page": false,
-                                        "item_type": "FOOD",
-                                        "meal_tags": [],
-                                        "created_at": "2021-08-18T16:36:13.539Z",
-                                        "updated_at": "2021-08-18T16:36:13.539Z",
-                                        "description": "",
-                                        "minimum_age": "0",
-                                        "posist_data": {
-                                            "__v": 1,
-                                            "_id": "611ca5e14cf77e9a5bbe69f4",
-                                            "name": "French  Fries",
-                                            "rate": 650,
-                                            "taxes": [],
-                                            "images": [],
-                                            "status": "ACTIVE",
-                                            "isAddOn": true,
-                                            "isCombo": false,
-                                            "itemTag": "611c91c83638ed8c46273627",
-                                            "category": {
-                                                "_id": "611c9f553638ed8c462736c4",
-                                                "languages": [],
-                                                "categoryName": "Select your sides",
-                                                "superCategory": {
-                                                    "_id": "611c9f544cf77e9a5bbe694f",
-                                                    "superCategoryName": "ADDONS"
-                                                }
-                                            },
-                                            "mapItems": [],
-                                            "languages": [],
-                                            "identifier": "00aea2f929",
-                                            "itemNumber": "99",
-                                            "description": "",
-                                            "ingredients": [],
-                                            "brandItem_id": "611ca30faac3945271ac9a19",
-                                            "itemVariants": [],
-                                            "statusChanged": false,
-                                            "activationUser": {
-                                                "_id": "6043b3ba74d7a1c14792a73d",
-                                                "username": "cokitchen_cokitchen"
-                                            },
-                                            "preparationTime": {
-                                                "time": 10
-                                            },
-                                            "nutritionalFacts": [],
-                                            "addOnAsNormalItem": false,
-                                            "nutritionalEntities": [],
-                                            "activationStatusLastChangedOn": "2021-08-18T06:17:16.818Z"
-                                        },
-                                        "available_no": "INFINITE",
-                                        "meal_keywords": [],
-                                        "meal_category_id": "aa3117fc-1182-44f0-b4b3-ab9e6ccca9fd",
-                                        "preparation_time": "10",
-                                        "nutrional_description": null,
-                                        "availability_soon_date": null,
-                                        "availability_soon_time": null,
-                                        "meal_allergy_metadatas": [],
-                                        "meal_dietary_metadatas": [],
-                                        "availability_soon_date_": null,
-                                        "meal_business_metadatas": [],
-                                        "nutritional_description": null,
-                                        "meal_descriptive_metadatas": [],
-                                        "availability_soon_date_data": null
-                                    },
-                                    "created_at": "2021-08-18T16:36:14.772Z",
-                                    "updated_at": "2021-08-18T16:36:14.772Z",
-                                    "posist_data": {},
-                                    "meal_addon_id": "84549b9f-0dda-4a0b-9cae-6b62024b9588",
-                                    "meal_addon_category_id": "559a5623-5b89-4279-92fa-aaa04a8613d0"
-                                }
-                            ],
-                            "amount": "2400",
-                            "images": [
-                                "http://res.cloudinary.com/cokitchen/image/upload/v1629807936/optimized_yvcfah.jpg"
-                            ],
-                            "alcohol": false,
-                            "item_no": 11,
-                            "summary": null,
-                            "brand_id": "00adf6c8-2759-4c4d-8c97-d6e4bed29d50",
-                            "is_addon": false,
-                            "is_combo": false,
-                            "position": 6,
-                            "quantity": 1,
-                            "home_page": false,
-                            "item_type": "FOOD",
-                            "meal_tags": [],
-                            "created_at": "2021-08-18T16:36:14.545Z",
-                            "order_note": "",
-                            "updated_at": "2021-08-18T16:36:14.545Z",
-                            "description": "Grilled peppered chicken wings.",
-                            "minimum_age": "0",
-                            "posist_data": {
-                                "_id": "611ca5e03638ed8c46273776",
-                                "name": "Peppered Chicken Wings",
-                                "rate": 1500,
-                                "taxes": [],
-                                "images": [],
-                                "status": "ACTIVE",
-                                "isAddOn": false,
-                                "isCombo": false,
-                                "itemTag": "611a360b4cf77e9a5bbe64a9",
-                                "category": {
-                                    "_id": "611c9f544cf77e9a5bbe694d",
-                                    "languages": [],
-                                    "categoryName": "Chicken Wings",
-                                    "superCategory": {
-                                        "_id": "611c9f534cf77e9a5bbe694c",
-                                        "superCategoryName": "FOOD"
-                                    }
-                                },
-                                "mapItems": [
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc61",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273766"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc62",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273767"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc63",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273768"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c4627378a",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc3c"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c4627378b",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc3d"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c4627378c",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc3e"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c4627378e",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc40"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c4627378d",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc3f"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c4627378f",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc41"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c46273790",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc42"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c46273794",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc46"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c46273792",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc44"
-                                    },
-                                    {
-                                        "_id": "611ca5e13638ed8c46273793",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc45"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc59",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c4627375e"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc5a",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c4627375f"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc5b",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273760"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc5c",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273761"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc5d",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273762"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc5e",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273763"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc5f",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273764"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc60",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273765"
-                                    },
-                                    {
-                                        "_id": "611ca5e14cf77e9a5bbe69f4",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30faac3945271ac9a19"
-                                    },
-                                    {
-                                        "_id": "611ca5e14cf77e9a5bbe69f5",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30faac3945271ac9a1a"
-                                    },
-                                    {
-                                        "_id": "611ca5e14cf77e9a5bbe69f6",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30faac3945271ac9a1b"
-                                    },
-                                    {
-                                        "_id": "611ca5e14cf77e9a5bbe69f7",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30faac3945271ac9a1c"
-                                    },
-                                    {
-                                        "_id": "611ca5e14cf77e9a5bbe69f8",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30faac3945271ac9a1d"
-                                    },
-                                    {
-                                        "_id": "611ca5e14cf77e9a5bbe69f9",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30faac3945271ac9a1e"
-                                    },
-                                    {
-                                        "_id": "611ca5e14cf77e9a5bbe69fa",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30faac3945271ac9a1f"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc56",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c4627375b"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc57",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c4627375c"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc58",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c4627375d"
-                                    },
-                                    {
-                                        "_id": "611ca5e03638ed8c46273787",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273758"
-                                    },
-                                    {
-                                        "_id": "611ca5e03638ed8c46273788",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273759"
-                                    },
-                                    {
-                                        "_id": "611ca5e03638ed8c46273789",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c4627375a"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a2f",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc2d"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a30",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc2e"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a31",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc2f"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a33",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc31"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a32",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc30"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a35",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc33"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a36",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc34"
-                                    },
-                                    {
-                                        "_id": "611ca5e0aac3945271ac9a34",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f238c2c16780adc32"
-                                    },
-                                    {
-                                        "_id": "611ca5e1238c2c16780adc64",
-                                        "variants": [],
-                                        "brandItem_id": "611ca30f3638ed8c46273769"
-                                    }
-                                ],
-                                "languages": [],
-                                "identifier": "2dc56012cc",
-                                "itemNumber": "11",
-                                "description": "Grilled peppered chicken wings.",
-                                "ingredients": [],
-                                "brandItem_id": "611ca30e3638ed8c46273747",
-                                "itemVariants": [],
-                                "statusChanged": true,
-                                "activationUser": {
-                                    "_id": "606ad0db04fb1ca430410b83",
-                                    "lastname": ".",
-                                    "username": "cokitchen_entp_admin",
-                                    "firstname": "Admin"
-                                },
-                                "preparationTime": {
-                                    "time": 10
-                                },
-                                "nutritionalFacts": [],
-                                "addOnAsNormalItem": false,
-                                "nutritionalEntities": [],
-                                "activationStatusLastChangedOn": "2022-02-16T12:50:18.896Z"
-                            },
-                            "available_no": "INFINITE",
-                            "meal_keywords": [
-                                {
-                                    "id": "244fe122-8585-4b5e-ab9a-081c686a5078",
-                                    "name": "Wings"
-                                },
-                                {
-                                    "id": "f188000d-b79b-4501-a08e-b124bc094a0f",
-                                    "name": "Chicken"
-                                }
-                            ],
-                            "meal_category_id": "d68b34c3-b80e-4ebc-8a7c-2a0a98c994b2",
-                            "preparation_time": "10",
-                            "nutrional_description": null,
-                            "availability_soon_date": null,
-                            "availability_soon_time": null,
-                            "meal_allergy_metadatas": [],
-                            "meal_dietary_metadatas": [],
-                            "availability_soon_date_": null,
-                            "meal_business_metadatas": [],
-                            "nutritional_description": null,
-                            "meal_descriptive_metadatas": [],
-                            "availability_soon_date_data": null
-                        }
-                    ],
-                    "amount": 3150
-                },
-                {
-                    "brand": {
-                        "id": "14c13a26-1217-4992-8e97-248dddd838a9",
-                        "new": false,
-                        "logo": "http://res.cloudinary.com/cokitchen/image/upload/v1657351062/FC_x_FC_Shop_Ad_slide_4_cw7o85.png",
-                        "name": "Snacks, Sweets & Munchies",
-                        "active": true,
-                        "images": [
-                            "http://res.cloudinary.com/cokitchen/image/upload/v1657351050/Snacks-Header_xefc88.jpg"
-                        ],
-                        "pop_up": false,
-                        "summary": "A curation of all your faves 💦 ",
-                        "item_type": "SHOP",
-                        "brand_tags": [],
-                        "created_at": "2022-07-08T19:10:52.692Z",
-                        "short_text": null,
-                        "updated_at": "2022-07-08T19:10:52.692Z",
-                        "coming_soon": false,
-                        "description": "A sweet curation of snacks, sweets & munchies guaranteed to keep your tastebuds busy 🤤",
-                        "popup_color": null,
-                        "closing_time": null,
-                        "cokitchen_id": "85c7d173-56ed-44c8-8335-ef0eecabf454",
-                        "opening_time": null,
-                        "brand_keywords": [],
-                        "coming_soon_text": null,
-                        "posist_customer_key": "EuFEhmXDwL3E9fc",
-                        "brand_business_metadatas": [],
-                        "brand_descriptive_metadatas": []
-                    },
-                    "meals": [
-                        {
-                            "id": "4a4efcf1-7148-4ddb-ac61-9540d5e265da",
-                            "new": false,
-                            "name": "Popstar Popcorn (50g)",
-                            "brand": {
-                                "id": "14c13a26-1217-4992-8e97-248dddd838a9",
-                                "new": false,
-                                "logo": "http://res.cloudinary.com/cokitchen/image/upload/v1657351062/FC_x_FC_Shop_Ad_slide_4_cw7o85.png",
-                                "name": "Snacks, Sweets & Munchies",
-                                "active": true,
-                                "images": [
-                                    "http://res.cloudinary.com/cokitchen/image/upload/v1657351050/Snacks-Header_xefc88.jpg"
-                                ],
-                                "pop_up": false,
-                                "summary": "A curation of all your faves 💦 ",
-                                "item_type": "SHOP",
-                                "brand_tags": [],
-                                "created_at": "2022-07-08T19:10:52.692Z",
-                                "short_text": null,
-                                "updated_at": "2022-07-08T19:10:52.692Z",
-                                "coming_soon": false,
-                                "description": "A sweet curation of snacks, sweets & munchies guaranteed to keep your tastebuds busy 🤤",
-                                "popup_color": null,
-                                "closing_time": null,
-                                "cokitchen_id": "85c7d173-56ed-44c8-8335-ef0eecabf454",
-                                "opening_time": null,
-                                "brand_keywords": [],
-                                "coming_soon_text": null,
-                                "posist_customer_key": "EuFEhmXDwL3E9fc",
-                                "brand_business_metadatas": [],
-                                "brand_descriptive_metadatas": []
-                            },
-                            "active": true,
-                            "addons": [],
-                            "amount": "150",
-                            "images": [
-                                "http://res.cloudinary.com/cokitchen/image/upload/v1657698724/hjasqjr7fwf43skslyem.jpg"
-                            ],
-                            "alcohol": false,
-                            "item_no": null,
-                            "summary": null,
-                            "brand_id": "14c13a26-1217-4992-8e97-248dddd838a9",
-                            "is_addon": false,
-                            "is_combo": false,
-                            "position": 7,
-                            "quantity": 4,
-                            "home_page": false,
-                            "item_type": "SHOP",
-                            "meal_tags": [],
-                            "created_at": "2022-07-08T19:14:38.924Z",
-                            "order_note": "",
-                            "updated_at": "2022-07-08T19:14:38.924Z",
-                            "description": "",
-                            "minimum_age": "0",
-                            "posist_data": {},
-                            "available_no": "217",
-                            "meal_keywords": [
-                                {
-                                    "id": "87ca2406-53bc-433b-83f2-9a0866003b69",
-                                    "name": "Popcorn & Savoury Snacks"
-                                },
-                                {
-                                    "id": "fb668845-a8a5-4737-9945-d88d84868689",
-                                    "name": "Snacks, Sweets & Munchies"
-                                }
-                            ],
-                            "meal_category_id": "3f0d7406-a1a7-43fc-b6c2-1092931c0967",
-                            "preparation_time": "10",
-                            "nutrional_description": null,
-                            "availability_soon_date": null,
-                            "availability_soon_time": null,
-                            "meal_allergy_metadatas": [],
-                            "meal_dietary_metadatas": [],
-                            "availability_soon_date_": null,
-                            "meal_business_metadatas": [],
-                            "nutritional_description": "",
-                            "meal_descriptive_metadatas": [],
-                            "availability_soon_date_data": null
-                        }
-                    ],
-                    "amount": 600
-                }
-            ],
-        ]
-
-
-        
-
-        // first row
-        function name() {
-            var anyAdult = mealsArray.map((brand, index) => brand[0].brand.name)
-            var thediv = document.getElementById("heading");
-            var text = document.createTextNode(anyAdult);
-            thediv.appendChild(text);
-        }
-        name()
-
-        function firstcoin() {
-            var anyAdult = mealsArray.map((brand, index) => brand[0].brand.logo)
-            var thediv = document.getElementById('theLogo')
-            var image = document.createElement('img');
-            image.src = anyAdult
-            image.style.width = "40px";
-            image.style.height = "40px";
-            thediv.appendChild(image)
-        }
-        firstcoin()
-
-        function description() {
-            var anyAdult = mealsArray.map((brand, index) => brand[0].brand.description)
-            var thediv = document.getElementById('description')
-            var text = document.createTextNode(anyAdult)
-            thediv.appendChild(text)
-        }
-        description()
-
-        function image() {
-            var anyAdult = mealsArray.map((brand, index) => brand[0].brand.images)
-            var thediv = document.getElementById('theimage')
-            var image = document.createElement('img');
-            image.src = anyAdult
-            image.style.width = "120px";
-            image.style.height = "94px";
-            thediv.appendChild(image)
-        }
-        image()
-
-
-        // second row
-        function secondcoin() {
-            var anyAdult = mealsArray.map((brand, index) => brand[1].brand.logo);
-            var thedivv = document.getElementById('2nd_Logo');
-            var image = document.createElement('img');
-            image.src = anyAdult
-            image.style.width = "40px";
-            image.style.height = "40px";
-            thedivv.appendChild(image)
-        
-        }
-        secondcoin()
-
-        function secondname() {
-            var anyAdult = mealsArray.map((brand, index) => brand[1].brand.name)
-            var thediv = document.getElementById("2nd_header");
-            var text = document.createTextNode(anyAdult);
-            thediv.appendChild(text);
-        }
-        secondname()
-
-        function second_description() {
-            var anyAdult = mealsArray.map((brand, index) => brand[1].brand.description)
-            var thediv = document.getElementById('2nd_description')
-            var text = document.createTextNode(anyAdult)
-            thediv.appendChild(text)
-        }
-        second_description()
-
-
-        function second_image() {
-            var anyAdult = mealsArray.map((brand, index) => brand[1].brand.images)
-            var thediv = document.getElementById('2nd_theimage')
-            var image = document.createElement('img');
-            image.src = anyAdult
-            image.style.width = "120px";
-            image.style.height = "94px";
-            thediv.appendChild(image)
-        }
-        second_image()
-
-
-
-        // third row
-        function thirdcoin() {
-            var anyAdult = mealsArray.map((brand, index) => brand[2].brand.logo)
-            var thedivv = document.getElementById('third_coin');
-            var image = document.createElement('img');
-            image.src = anyAdult
-            image.style.width = "40px";
-            image.style.height = "40px";
-            thedivv.appendChild(image)
-        }
-        thirdcoin()
-
-
-        function thirdname() {
-            var anyAdult = mealsArray.map((brand, index) => brand[2].brand.name)
-            var thediv = document.getElementById("third_header");
-            var text = document.createTextNode(anyAdult);
-            thediv.appendChild(text);
-        }
-        thirdname()
-
-        
-        function third_description() {
-            var anyAdult = mealsArray.map((brand, index) => brand[2].brand.description)
-            var thediv = document.getElementById('3rd_description')
-            var text = document.createTextNode(anyAdult)
-            thediv.appendChild(text)
-        }
-        third_description()
-
-        function third_image() {
-            var anyAdult = mealsArray.map((brand, index) => brand[2].brand.images)
-            var thediv = document.getElementById('3rd_theimage')
-            var image = document.createElement('img');
-            image.src = anyAdult
-            image.style.width = "120px";
-            image.style.height = "94px";
-            thediv.appendChild(image)
-        }
-        third_image()
-
-    </script>
 
 </body>
 
