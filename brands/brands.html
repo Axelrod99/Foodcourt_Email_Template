@@ -10,6 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: ClashGrotesk-600;
+            src: url(fonts/OTF/ClashGrotesk-Semibold.otf);
+        }
+
+        @font-face {
+            font-family: ClashGrotesk-500;
+            src: url(fonts/OTF/ClashGrotesk-Medium.otf);
+        }
+
+        @font-face {
+            font-family: ClashGrotesk-400;
+            src: url(fonts/OTF/ClashGrotesk-Regular.otf);
+        }
+
         :root {
             color-scheme: light dark;
         }
@@ -62,8 +77,6 @@
             font-weight: 400;
             line-height: 25px;
             letter-spacing: 0.3px;
-            font-size: 16px;
-
 
         }
 
@@ -76,7 +89,17 @@
         }
 
         .the_logo {
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (min-width: 600px) {
+            .the_logo {
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
         .image {
@@ -87,6 +110,7 @@
 
         .red {
             color: #A59292;
+            font-family: ClashGrotesk-400;
         }
 
 
@@ -95,9 +119,9 @@
             width: 100%;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .first {
-                width: 90%;
+                width: 70%;
             }
         }
 
@@ -110,7 +134,7 @@
             width: 95%;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .widthh {
                 width: 95%;
             }
@@ -127,6 +151,18 @@
             font-size: 19px;
             line-height: 22px;
             line-height: 22px;
+            font-family: ClashGrotesk-500;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            .header {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                line-height: 22px;
+                font-family: ClashGrotesk-500;
+            }
         }
 
 
@@ -139,7 +175,7 @@
             padding-right: 3px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .icon {
                 padding-left: 10px;
                 padding-right: 10px;
@@ -151,7 +187,7 @@
             width: 25px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .photo {
                 height: 30px;
                 width: 30px;
@@ -163,21 +199,17 @@
             font-size: 12px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .P_tag {
                 color: #595959;
                 font-size: 14px;
             }
         }
 
-        p {
-            font-size: 14px;
-        }
 
-        @media screen and (min-width: 500px) {
-            p {
-                font-size: 16px;
-            }
+        p {
+            font-size: 15px;
+            line-height: 22px;
         }
 
         /* footer */
@@ -190,14 +222,7 @@
             text-align: center;
         }
 
-        p {
-            font-size: 14px;
-            line-height: 22px;
-        }
 
-        .header {
-            font-weight: 500;
-        }
 
         a {
             color: #595959;
@@ -217,7 +242,7 @@
 } */
 
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .img-div {
                 display: flex;
             }
@@ -233,7 +258,7 @@
 
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             #center {
                 width: 65%;
                 margin: auto;
@@ -241,7 +266,7 @@
         }
 
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             #center_two {
                 width: 90%;
                 margin: auto;
@@ -253,6 +278,8 @@
         @media screen and (prefers-color-scheme: light) {
             .last_table {
                 background-color: #F7F7F8;
+                border-bottom: 6px solid #F73B58;
+                font-family: ClashGrotesk-400;
             }
 
         }
@@ -261,6 +288,7 @@
         @media screen and (prefers-color-scheme: dark) {
             .last_table {
                 background-color: #181616;
+                font-family: ClashGrotesk-400;
             }
 
         }
@@ -287,6 +315,85 @@
                 color: #FFFFFF;
             }
         }
+
+        .link {
+            color: #716A6C;
+            display: flex;
+            align-items: end;
+            font-size: 14px;
+            font-family: ClashGrotesk-500;
+
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+            .link {
+                color: #DEDEDE;
+            }
+        }
+
+
+        @media screen and (min-width: 600px) {
+            .link {
+                display: flex;
+                align-items: end;
+                font-size: 16px;
+            }
+        }
+
+        .logo_img {
+            /* background-color: blue; */
+            height: 24px;
+            width: 159px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .logo_img {
+                width: 245px;
+                height: 37px;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            .fc_team {
+                color: #645E5F;
+                font-family: ClashGrotesk-500;
+            }
+
+        }
+
+
+        @media screen and (prefers-color-scheme: dark) {
+            .fc_team {
+                color: #A59292;
+                font-family: ClashGrotesk-500;
+            }
+
+        }
+
+        .fc_team{
+            font-size: 16px;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            .fc_team {
+                font-size: 17px;
+            }
+        }
+
+        .collins {
+            font-family: ClashGrotesk-400;
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .collins {
+                font-family: ClashGrotesk-600;
+                font-size: 26px;
+                line-height: 32px;
+            }
+        }
     </style>
 </head>
 
@@ -300,8 +407,12 @@
                     <table width="100%" class="logo">
                         <tr>
                             <td class="the_logo">
-                                <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/the_logo_utj3nt.png"
+                                <img class="logo_img"
+                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/the_logo_utj3nt.png"
                                     alt="" width="">
+
+
+                                <a href="#" class="link">Visit our website</a>
                             </td>
                         </tr>
                     </table>
@@ -320,8 +431,7 @@
                                     <table width="90%">
                                         <tr>
                                             <td>
-                                                <h2 style="font-weight: 700;">Hi Collins, what are you craving?🙃</h2>
-                                                <p style="font-weight: 500;"></p>
+                                                <h2 class="collins">Hi Collins, what are you craving?🙃</h2>
                                                 <p class="red">Burgers, Shawarmas, Jollof rice, or pounded yam? Get all
                                                     of these and
                                                     more with FoodCourt! Here are some food brands where you can find
@@ -351,10 +461,10 @@
 
                                                             <picture class="cloud">
                                                                 <source
-                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673623104/Picture_here_liion8.png"
-                                                                    media="(prefers-color-scheme:dark)">
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674336309/header_cravings_ug8wxg.png"
+                                                                    media="(min-width: 600px)">
                                                                 <img class="cloud"
-                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673623035/Picture_here_zlf5he.png">
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674336644/Header_xnpmdi.png">
                                                             </picture>
 
 
@@ -394,10 +504,10 @@
 
                                                             <picture class="cloud">
                                                                 <source
-                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
-                                                                    media="(prefers-color-scheme:dark)">
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674336399/sunny_side_huyvnu.png"
+                                                                    media="(min-width: 600px)">
                                                                 <img class="cloud"
-                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674336856/sunny_v3pijb.png">
                                                             </picture>
 
                                                         </td>
@@ -429,10 +539,10 @@
 
                                                             <picture class="cloud">
                                                                 <source
-                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
-                                                                    media="(prefers-color-scheme:dark)">
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674514120/Frame_36957_byj62n.png"
+                                                                    media="(min-width: 600px)">
                                                                 <img class="cloud"
-                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674337512/jollof_sc97iw.png">
                                                             </picture>
 
                                                         </td>
@@ -461,13 +571,15 @@
 
                                                     <tr>
                                                         <td class="image">
+
                                                             <picture class="cloud">
                                                                 <source
-                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
-                                                                    media="(prefers-color-scheme:dark)">
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674336334/wrappcciittyy_ydmnqq.png"
+                                                                    media="(min-width: 600px)">
                                                                 <img class="cloud"
-                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674338095/wrap_city_rjagdf.png">
                                                             </picture>
+
                                                         </td>
                                                     </tr>
 
@@ -485,9 +597,9 @@
                                                     <tr>
                                                         <td>
                                                             <p class="header">Sweet Treats</p>
-                                                            <p>Enjoy a wholesome experience of the rich Asian culture
-                                                                through delicious and authentic Chinese dishes prepared
-                                                                to tingle your taste buds!</p>
+                                                            <p>Satisfy your sweet tooth cravings with flavorsome treats
+                                                                of french toast, waffles, pancakes, and crepes dazzled
+                                                                with your favorite fruit and syrup toppings!</p>
                                                         </td>
                                                     </tr>
 
@@ -495,13 +607,15 @@
 
                                                     <tr>
                                                         <td>
+
                                                             <picture class="cloud">
                                                                 <source
-                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
-                                                                    media="(prefers-color-scheme:dark)">
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674514121/Frame_36954_ma8txa.png"
+                                                                    media="(min-width: 600px)">
                                                                 <img class="cloud"
-                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674338303/sweet_treats_puned5.png">
                                                             </picture>
+
                                                         </td>
                                                     </tr>
 
@@ -528,13 +642,15 @@
 
                                                     <tr>
                                                         <td class="image">
+
                                                             <picture class="cloud">
                                                                 <source
-                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
-                                                                    media="(prefers-color-scheme:dark)">
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674514121/Frame_36955_nxgjdz.png"
+                                                                    media="(min-width: 600px)">
                                                                 <img class="cloud"
-                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674339072/chow_1_fhv7w1.png">
                                                             </picture>
+
                                                         </td>
                                                     </tr>
 
@@ -564,13 +680,15 @@
 
                                                     <tr>
                                                         <td class="image">
+
                                                             <picture class="cloud">
                                                                 <source
-                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673655110/Image_hinmw1.png"
-                                                                    media="(prefers-color-scheme:dark)">
+                                                                    srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674339378/cocktail_2_foujwa.png"
+                                                                    media="(min-width: 600px)">
                                                                 <img class="cloud"
-                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621126/Image_uuzp7b.png">
+                                                                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674339378/cocktail_1_rynbzj.png">
                                                             </picture>
+
                                                         </td>
                                                     </tr>
 
@@ -603,8 +721,9 @@
                                                     <a style="color: #0EA3FD;" href="#">getFoodCourt.com</a>
                                                 </p>
 
-                                                <p>With love,<br>
-                                                    <span style="font-weight: 500;">Team FoodCourt❤</span>
+                                                <p class="fc_team">With love,<br>
+                                                    <span style="font-weight: 500;" class="fc_team">Team
+                                                        FoodCourt❤</span>
                                                 </p>
                                             </td>
                                         </tr>
@@ -615,7 +734,8 @@
 
 
                         <!-- footer -->
-                        <table class="last_table" style="border-radius: 10px; width: 100%;">
+                        <table class="last_table"
+                            style="border-radius: 10px; width: 100%; border-bottom: 6px solid red;">
 
                             <tr>
                                 <td align="center" style='padding-top: 20px;'>

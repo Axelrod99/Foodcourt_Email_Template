@@ -10,6 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: ClashGrotesk-600;
+            src: url(fonts/OTF/ClashGrotesk-Semibold.otf);
+        }
+
+        @font-face {
+            font-family: ClashGrotesk-500;
+            src: url(fonts/OTF/ClashGrotesk-Medium.otf);
+        }
+
+        @font-face {
+            font-family: ClashGrotesk-400;
+            src: url(fonts/OTF/ClashGrotesk-Regular.otf);
+        }
+
         :root {
             color-scheme: light dark;
         }
@@ -83,9 +98,9 @@
             width: 100%;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .first {
-                width: 90%;
+                width: 70%;
             }
         }
 
@@ -106,7 +121,7 @@
             padding-right: 3px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .icon {
                 padding-left: 10px;
                 padding-right: 10px;
@@ -118,7 +133,7 @@
             width: 25px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .photo {
                 height: 30px;
                 width: 30px;
@@ -130,7 +145,7 @@
             gap: 8px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .flex {
                 gap: 20px;
             }
@@ -170,7 +185,7 @@
             font-size: 12px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .P_tag {
                 color: #595959;
                 font-size: 14px;
@@ -178,26 +193,21 @@
         }
 
         p {
-            font-size: 14px;
+            font-size: 15px;
         }
 
-        @media screen and (min-width: 500px) {
-            p {
-                font-size: 16px;
-            }
-        }
 
         .widthh {
             width: 95%;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .widthh {
                 width: 90%;
             }
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             #center {
                 width: 65%;
                 margin: auto;
@@ -205,7 +215,7 @@
         }
 
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             #center_two {
                 width: 90%;
                 margin: auto;
@@ -225,7 +235,7 @@
             font-size: 10px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .text {
                 font-size: 18px;
             }
@@ -236,6 +246,7 @@
         @media screen and (prefers-color-scheme: light) {
             .fc_team {
                 color: #645E5F;
+                font-family: ClashGrotesk-500;
             }
 
         }
@@ -244,14 +255,29 @@
         @media screen and (prefers-color-scheme: dark) {
             .fc_team {
                 color: #A59292;
+                font-family: ClashGrotesk-500;
             }
 
         }
+
+        .fc_team {
+            font-size: 16px;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            .fc_team {
+                font-size: 17px;
+            }
+        }
+
 
 
         @media screen and (prefers-color-scheme: light) {
             .last_table {
                 background-color: #F7F7F8;
+                border-bottom: 6px solid #F73B58;
+                font-family: ClashGrotesk-400;
             }
 
         }
@@ -260,6 +286,7 @@
         @media screen and (prefers-color-scheme: dark) {
             .last_table {
                 background-color: #181616;
+                font-family: ClashGrotesk-400;
             }
 
         }
@@ -286,13 +313,34 @@
                 color: #FFFFFF;
             }
         }
+
+        .title {
+            font-weight: 600;
+            font-size: 22px;
+            font-family: ClashGrotesk-600;
+            color: #242424;
+            line-height: 32px;
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+
+            .title {
+                color: #FFFFFF;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .title {
+                font-size: 26px;
+            }
+        }
     </style>
 </head>
 
 <body class="main_body">
     <center class="wrapper">
 
-        <table width="85%" class="first">
+        <table class="first">
 
             <tr>
                 <td>
@@ -318,7 +366,7 @@
                                     <table class="firstt">
                                         <tr>
                                             <td class="text">
-                                                <p style="font-weight: 600;">Hi Collins, enjoy group ordering with
+                                                <p class="title">Hi Collins, enjoy group ordering with
                                                     friends on FoodCourt</p>
                                             </td>
                                         </tr>
@@ -336,10 +384,10 @@
                                             <td class="image">
                                                 <picture class="cloud">
                                                     <source
-                                                        srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621349/Picture_here_i6ttmq.png"
+                                                        srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674685212/Group_ordering_desktop_jtsr5p.png"
                                                         media="(prefers-color-scheme:dark)">
                                                     <img class="cloud"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673364011/Picture_here_mzqtyr.png">
+                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674685209/Group_Ordering_Mobile_s4clu5.png">
                                                 </picture>
                                             </td>
                                         </tr>
@@ -388,10 +436,10 @@
                                             <td class="image">
                                                 <picture class="cloud">
                                                     <source
-                                                        srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673719857/Picture_here_ikymcc.png"
+                                                        srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674685211/Group_ordering_desktop_2_fcbc39.png"
                                                         media="(prefers-color-scheme:dark)">
                                                     <img class="cloud"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673719857/Picture_heree_lbkypf.png">
+                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674685208/Group_Ordering_Mobile_2_znu9eg.png">
                                                 </picture>
                                             </td>
                                         </tr>
@@ -420,7 +468,8 @@
 
 
                                                 <p class="fc_team">With love,<br>
-                                                    <span style="font-weight: 500;">Team FoodCourt❤</span>
+                                                    <span style="font-weight: 500;" class="fc_team">Team
+                                                        FoodCourt❤</span>
                                                 </p>
 
                                             </td>
@@ -451,7 +500,8 @@
 
 
 
-                        <table class="last_table" style="border-radius: 10px; width: 100%;">
+                        <table class="last_table"
+                            style="border-radius: 10px; width: 100%; border-bottom: 6px solid #F73B58;">
 
                             <tr>
                                 <td align="center" style='padding-top: 20px;'>

@@ -10,6 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: ClashGrotesk-600;
+            src: url(fonts/OTF/ClashGrotesk-Semibold.otf);
+        }
+
+        @font-face {
+            font-family: ClashGrotesk-500;
+            src: url(fonts/OTF/ClashGrotesk-Medium.otf);
+        }
+
+        @font-face {
+            font-family: ClashGrotesk-400;
+            src: url(fonts/OTF/ClashGrotesk-Regular.otf);
+        }
+
+
         :root {
             color-scheme: light dark;
         }
@@ -84,9 +100,9 @@
             width: 100%;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .first {
-                width: 90%;
+                width: 70%;
             }
         }
 
@@ -113,7 +129,7 @@
             padding-right: 3px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .icon {
                 padding-left: 10px;
                 padding-right: 10px;
@@ -125,7 +141,7 @@
             width: 25px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .photo {
                 height: 30px;
                 width: 30px;
@@ -137,7 +153,7 @@
             gap: 8px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .flex {
                 gap: 20px;
             }
@@ -159,7 +175,7 @@
             width: 95%;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .btn_width {
                 width: 85%;
             }
@@ -188,7 +204,7 @@
             font-size: 12px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .pp {
                 color: #595959;
                 font-size: 14px;
@@ -196,27 +212,22 @@
         }
 
         p {
-            font-size: 14px;
+            font-size: 15px;
         }
 
-        @media screen and (min-width: 500px) {
-            p {
-                font-size: 16px;
-            }
-        }
 
         .widthh {
             width: 95%;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .widthh {
                 width: 95%;
             }
         }
 
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             #center {
                 width: 65%;
                 margin: auto;
@@ -224,7 +235,7 @@
         }
 
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             #center_two {
                 width: 95%;
                 margin: auto;
@@ -244,14 +255,14 @@
             font-size: 10px;
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .text {
                 font-size: 18px;
             }
         }
 
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
             .text {
                 font-size: 18px;
             }
@@ -260,6 +271,7 @@
         @media screen and (prefers-color-scheme: light) {
             .fc_team {
                 color: #645E5F;
+                font-family: ClashGrotesk-500;
             }
 
         }
@@ -268,14 +280,27 @@
         @media screen and (prefers-color-scheme: dark) {
             .fc_team {
                 color: #A59292;
+                font-family: ClashGrotesk-500;
             }
 
         }
 
+        .fc_team {
+            font-size: 16px;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            .fc_team {
+                font-size: 17px;
+            }
+        }
 
         @media screen and (prefers-color-scheme: light) {
             .last_table {
                 background-color: #F7F7F8;
+                border-bottom: 6px solid #F73B58;
+                font-family: ClashGrotesk-400;
             }
 
         }
@@ -284,6 +309,7 @@
         @media screen and (prefers-color-scheme: dark) {
             .last_table {
                 background-color: #181616;
+                font-family: ClashGrotesk-400;
             }
 
         }
@@ -309,6 +335,30 @@
             a {
                 color: #FFFFFF;
             }
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 22px;
+            font-family: ClashGrotesk-600;
+            color: #242424;
+            line-height: 32px;
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+
+            .title {
+                color: #FFFFFF;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .title {
+                font-size: 26px;
+                line-height: 32px;
+                font-family: ClashGrotesk-600;
+            }
+        
         }
     </style>
 </head>
@@ -343,7 +393,7 @@
                                     <table class="firstt">
                                         <tr>
                                             <td class="text">
-                                                <h2 style="font-weight: 700;">Hi Collins, enjoyment awaits you🎉</h2>
+                                                <h2 class="title">Hi Collins, enjoyment awaits you🎉</h2>
                                             </td>
                                         </tr>
                                     </table>
@@ -361,10 +411,10 @@
                                             <td class="image">
                                                 <picture class="cloud">
                                                     <source
-                                                        srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673621349/Picture_here_i6ttmq.png"
-                                                        media="(prefers-color-scheme:dark)">
+                                                        srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674476471/Reminder_Desktop_oagxtz.png"
+                                                        media="(min-width: 600px)">
                                                     <img class="cloud"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673364011/Picture_here_mzqtyr.png">
+                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674476470/Reminder_Mobile_zfmnes.png">
                                                 </picture>
                                             </td>
                                         </tr>
@@ -388,8 +438,9 @@
                                                 </p>
                                                 <p>Open the FoodCourt app today and order your favorite meals from any
                                                     of our amazing food brands. Hurry now!</p>
-                                                <p>With love,<br>
-                                                    <span>Team FoodCourt❤</span>
+                                                <p class="fc_team">With love,<br>
+                                                    <span class="fc_team">Team
+                                                        FoodCourt❤</span>
                                                 </p>
 
                                             </td>
@@ -420,7 +471,8 @@
 
 
 
-                        <table class="last_table" style="border-radius: 10px; width: 100%;">
+                        <table class="last_table"
+                            style="border-radius: 10px; width: 100%; border-bottom: 6px solid #F73B58;">
 
                             <tr>
                                 <td align="center" style='padding-top: 20px;'>
