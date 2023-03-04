@@ -74,7 +74,7 @@
 
         }
 
-        .names{
+        .names {
             font-size: 18px;
             font-family: ClashGrotesk-500;
         }
@@ -437,8 +437,6 @@
                 font-family: ClashGrotesk-400;
             }
         }
-
-        
     </style>
 </head>
 
@@ -475,14 +473,15 @@
                                         <tr>
                                             <td>
                                                 <p class="names" style="font-weight: 500;">Hello <span class="names"
-                                                        style="font-weight: 500;" id="name"></span>,
+                                                        style="font-weight: 500;" id="name">{{firstname}}</span>,
                                                 <p>
                                                 <p class="order" id="order">Your order <span style="font-weight: 500;"
-                                                        id="code"></span> has been
+                                                        id="code">{{order}}</span> has been
                                                     successfully completed.
                                                 </p>
 
-                                                <p id="order"> <span style="color: red; font-family: ClashGrotesk-500;" id="Amount_paid"> </span>
+                                                <p id="order"> <span style="color: red; font-family: ClashGrotesk-500;"
+                                                        id="Amount_paid">{{Amount_paid}} </span>
                                                     <span style="color: #858585;"> was charged for your meal</span>
                                                 </p>
 
@@ -496,9 +495,11 @@
 
                                             <tr>
                                                 <td>
-                                                    <p style="font-weight: 500; color: #858585; font-family: ClashGrotesk-500;"> Transaction Details
+                                                    <p
+                                                        style="font-weight: 500; color: #858585; font-family: ClashGrotesk-500;">
+                                                        Transaction Details
                                                     </p>
-                                                    <p style="font-weight: 500;">Wrap City</p>
+                                                    <p style="font-weight: 500;">{{foodbrand}}</p>
 
                                                 </td>
                                             </tr>
@@ -512,21 +513,22 @@
                                                             <td>
                                                                 <table>
                                                                     <tr>
-                                                                        <td style=" display: flex; ">
-                                                                            <p class="x1" id="x1"></p>
+                                                                        <td style=" display: flex">
+                                                                            <p class="x1" id="x1">{{x}}</p>
                                                                         </td>
-                                                                        <td>
-                                                                            <p id="first_meal"></p>
+
+                                                                        <td class="" style="color: blue;">
+                                                                            <!-- <p id="first_meal"></p> -->
                                                                             <span style="display: flex; gap: 4px;">
                                                                                 <p id="second_num"
-                                                                                    style="color: #858585;"></p>
-                                                                                <p id="second_meal"></p>
+                                                                                    style="color: #858585;">{{num}}</p>
+                                                                                <p id="second_meal">{{first_meal}}</p>
                                                                             </span>
-                                                                            <span style="display: flex; gap: 4px;">
+                                                                            <!-- <span style="display: flex; gap: 4px;">
                                                                                 <p id="third_num"
                                                                                     style="color: #858585;"></p>
                                                                                 <p id="third_meal"></p>
-                                                                            </span>
+                                                                            </span> -->
 
                                                                         </td>
                                                                     </tr>
@@ -538,11 +540,11 @@
 
                                                     <table class="second-column">
                                                         <tr>
-                                                            <td class="price">
+                                                           
 
-                                                        <tr>
+
                                                             <td style="display: block;">
-                                                                <p style="font-weight: 500;" id="price"> </p>
+                                                                <p style="font-weight: 500;" id="price"> {{price}}</p>
                                                             </td>
                                                         </tr>
 
@@ -586,12 +588,16 @@
                                                 <table class="second-column">
                                                     <tr>
                                                         <td class="fees" style="align-items: center;">
-                                                            <p style="font-weight: 500;" id="subtotal"> </p>
-                                                            <p style="font-weight: 500;" id="delivery_fee"> </p>
+                                                            <p style="font-weight: 500;" id="subtotal">{{subtitle}} </p>
+                                                            <p style="font-weight: 500;" id="delivery_fee">
+                                                                {{delivery_fee}} </p>
                                                             <p style="color: green; font-weight: 500 " id="service_fee">
+                                                                {{service_fee}}
                                                             </p>
-                                                            <p style="font-weight: 500;" id="Order_total"> </p>
+                                                            <p style="font-weight: 500;" id="Order_total">
+                                                                {{Order_total}} </p>
                                                             <p style="color: red; font-weight: 500" id="Amount_paidd">
+                                                                {{Amount_paid}}
                                                             </p>
                                                         </td>
                                                     </tr>
@@ -738,7 +744,7 @@
 
                                 <tr>
                                     <td align="center" style="text-align: center;">
-                                        <p class="pp">Copyright © 2022 Cokitchen Technologies,
+                                        <p class="pp">Copyright © {{date}} Cokitchen Technologies,
                                             All rights
                                             reserved. </p>
                                     </td>
@@ -810,7 +816,7 @@
             var text = document.createTextNode(nametag);
             theprice.appendChild(text)
         }
-        name()
+        // name()
 
         function code() {
             var codetag = Array.map((item, index) => item[0].code)
@@ -818,7 +824,7 @@
             var text = document.createTextNode(codetag);
             theprice.appendChild(text)
         }
-        code()
+        // code()
 
         function first_meal() {
             var first_meal = Array.map((item, index) => item[0].first_meal)
@@ -826,103 +832,103 @@
             var text = document.createTextNode(first_meal);
             theprice.appendChild(text)
         }
-        first_meal()
+        // first_meal()
 
         function second_num() {
             var second_num = Array.map((item, index) => item[0].second_num)
             var theprice = document.getElementById('second_num')
             var text = document.createTextNode(second_num);
             theprice.appendChild(text)
-        }
-        second_num()
+            // }
+            // second_num()
 
-        function second_meal() {
-            var second_meal = Array.map((item, index) => item[0].second_meal)
-            var theprice = document.getElementById('second_meal')
-            var text = document.createTextNode(second_meal);
-            theprice.appendChild(text)
-        }
-        second_meal()
+            function second_meal() {
+                var second_meal = Array.map((item, index) => item[0].second_meal)
+                var theprice = document.getElementById('second_meal')
+                var text = document.createTextNode(second_meal);
+                theprice.appendChild(text)
+            }
+            // second_meal()
 
-        function third_meal() {
-            var third_meal = Array.map((item, index) => item[0].third_meal)
-            var theprice = document.getElementById('third_meal')
-            var text = document.createTextNode(third_meal);
-            theprice.appendChild(text)
-        }
-        third_meal()
+            function third_meal() {
+                var third_meal = Array.map((item, index) => item[0].third_meal)
+                var theprice = document.getElementById('third_meal')
+                var text = document.createTextNode(third_meal);
+                theprice.appendChild(text)
+            }
+            third_meal()
 
-        function third_num() {
-            var third_num = Array.map((item, index) => item[0].third_num)
-            var theprice = document.getElementById('third_num')
-            var text = document.createTextNode(third_num);
-            theprice.appendChild(text)
-        }
-        third_num()
+            function third_num() {
+                var third_num = Array.map((item, index) => item[0].third_num)
+                var theprice = document.getElementById('third_num')
+                var text = document.createTextNode(third_num);
+                theprice.appendChild(text)
+            }
+            third_num()
 
-        function price() {
-            var price = Array.map((item, index) => item[0].price)
-            var theprice = document.getElementById('price')
-            var text = document.createTextNode(price);
-            theprice.appendChild(text)
-        }
-        price()
+            function price() {
+                var price = Array.map((item, index) => item[0].price)
+                var theprice = document.getElementById('price')
+                var text = document.createTextNode(price);
+                theprice.appendChild(text)
+            }
+            price()
 
-        function subtotal() {
-            var subtotal = Array.map((item, index) => item[1].Subtotal)
-            var thesubtotal = document.getElementById('subtotal')
-            var text = document.createTextNode(subtotal);
-            thesubtotal.appendChild(text)
-        }
-        subtotal()
+            function subtotal() {
+                var subtotal = Array.map((item, index) => item[1].Subtotal)
+                var thesubtotal = document.getElementById('subtotal')
+                var text = document.createTextNode(subtotal);
+                thesubtotal.appendChild(text)
+            }
+            // subtotal()
 
-        function Delivery_fee() {
-            var Delivery_fee = Array.map((item, index) => item[1].Delivery_fee)
-            var theDelivery_fee = document.getElementById('delivery_fee')
-            var text = document.createTextNode(Delivery_fee)
-            theDelivery_fee.appendChild(text)
-        }
-        Delivery_fee()
+            function Delivery_fee() {
+                var Delivery_fee = Array.map((item, index) => item[1].Delivery_fee)
+                var theDelivery_fee = document.getElementById('delivery_fee')
+                var text = document.createTextNode(Delivery_fee)
+                theDelivery_fee.appendChild(text)
+            }
+            Delivery_fee()
 
-        function service_fee() {
-            var service_fee = Array.map((item, index) => item[1].Service_fee)
-            var theservice_fee = document.getElementById('service_fee')
-            var text = document.createTextNode(service_fee)
-            theservice_fee.appendChild(text)
-        }
-        service_fee()
+            function service_fee() {
+                var service_fee = Array.map((item, index) => item[1].Service_fee)
+                var theservice_fee = document.getElementById('service_fee')
+                var text = document.createTextNode(service_fee)
+                theservice_fee.appendChild(text)
+            }
+            service_fee()
 
-        function Order_total() {
-            var Order_total = Array.map((item, index) => item[1].Order_total)
-            var theOrder_total = document.getElementById('Order_total')
-            var text = document.createTextNode(Order_total)
-            theOrder_total.appendChild(text)
-        }
-        Order_total()
+            function Order_total() {
+                var Order_total = Array.map((item, index) => item[1].Order_total)
+                var theOrder_total = document.getElementById('Order_total')
+                var text = document.createTextNode(Order_total)
+                theOrder_total.appendChild(text)
+            }
+            Order_total()
 
-        function Amount_paid() {
-            var Amount_paid = Array.map((item, index) => item[1].Amount_paid)
-            var theAmount_paid = document.getElementById('Amount_paid')
-            var text = document.createTextNode(Amount_paid)
-            theAmount_paid.appendChild(text)
-        }
-        Amount_paid()
+            function Amount_paid() {
+                var Amount_paid = Array.map((item, index) => item[1].Amount_paid)
+                var theAmount_paid = document.getElementById('Amount_paid')
+                var text = document.createTextNode(Amount_paid)
+                theAmount_paid.appendChild(text)
+            }
+            // Amount_paid()
 
-        function Amount_paidd() {
-            var Amount_paid = Array.map((item, index) => item[1].Amount_paid)
-            var theAmount_paidd = document.getElementById('Amount_paidd')
-            var text = document.createTextNode(Amount_paid)
-            theAmount_paidd.appendChild(text)
-        }
-        Amount_paidd()
+            function Amount_paidd() {
+                var Amount_paid = Array.map((item, index) => item[1].Amount_paid)
+                var theAmount_paidd = document.getElementById('Amount_paidd')
+                var text = document.createTextNode(Amount_paid)
+                theAmount_paidd.appendChild(text)
+            }
+            Amount_paidd()
 
-        function num() {
-            var nums = Array.map((item, index) => item[0].x1)
-            var nums_total = document.getElementById('x1')
-            var text = document.createTextNode(nums)
-            nums_total.appendChild(text)
-        }
-        num()
+            function num() {
+                var nums = Array.map((item, index) => item[0].x1)
+                var nums_total = document.getElementById('x1')
+                var text = document.createTextNode(nums)
+                nums_total.appendChild(text)
+            }
+        // num()
 
 
     </script>

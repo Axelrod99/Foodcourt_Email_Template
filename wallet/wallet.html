@@ -394,11 +394,11 @@
                                         <tr>
                                             <td>
                                                 <p class="names" style="font-weight: 500;">Hello <span class="names"
-                                                        style="font-weight: 500;" id="name"></span>,
+                                                        style="font-weight: 500;" id="name">{{firstname}}</span>,
                                                 <p>
                                                 <p id="order">Your FoodCourt Wallet has been successfully credited</p>
 
-                                                <p id="order"> <span style="color: #73D260; font-weight: 500" id="charge"> </span>
+                                                <p id="order"> <span style="color: #73D260; font-weight: 500" id="charge">{{amount}} </span>
                                                     <span id="order"> was added to your wallet</span>
                                                 </p>
                                             </td>
@@ -415,7 +415,7 @@
 
                                                     <span style="display: flex;">
                                                         <p>Amount: </p>
-                                                        <p id="price_" style="font-weight: 600; color: #46AE31;"></p>
+                                                        <p id="price_" style="font-weight: 600; color: #46AE31;">{{amount}}</p>
                                                     </span>
 
 
@@ -426,9 +426,9 @@
                                             <tr>
                                                 <td>
 
-                                                    <p style="height: 15px;">Reference: <span id="ref"></span></p>
+                                                    <p style="height: 15px;">Reference: <span id="ref">{{Reference}}</span></p>
 
-                                                    <p>Date: <span id="date"></span></p>
+                                                    <p>Date: <span id="date">{{full_date}}</span></p>
 
 
                                                 </td>
@@ -560,7 +560,7 @@
 
                                                             <tr>
                                                                 <td align="center" style="text-align: center;">
-                                                                    <p class="pp">Copyright © 2022 Cokitchen
+                                                                    <p class="pp">Copyright © {{date}} Cokitchen
                                                                         Technologies,
                                                                         All rights
                                                                         reserved. </p>
@@ -629,7 +629,7 @@
             var text = document.createTextNode(nametag);
             theprice.appendChild(text)
         }
-        name()
+        // name()
 
 
         function price() {
@@ -638,7 +638,7 @@
             var text = document.createTextNode(pricetag);
             theprice.appendChild(text)
         }
-        price()
+        // price()
 
 
         function Reference() {
@@ -647,7 +647,7 @@
             var text = document.createTextNode(reftag);
             theprice.appendChild(text)
         }
-        Reference()
+        // Reference()
 
 
         function date() {
@@ -656,7 +656,7 @@
             var text = document.createTextNode(datetag);
             theprice.appendChild(text)
         }
-        date()
+        // date()
 
 
         function charge() {
@@ -665,7 +665,7 @@
             var text = document.createTextNode(chargetag);
             theprice.appendChild(text)
         }
-        charge()
+        // charge()
 
     </script>
 
