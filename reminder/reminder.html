@@ -54,6 +54,7 @@
         @media screen and (prefers-color-scheme: light) {
             .BODY {
                 background-color: #ffffff;
+                color: #1A1A1A;
             }
 
         }
@@ -62,6 +63,7 @@
         @media screen and (prefers-color-scheme: dark) {
             .BODY {
                 background-color: #0D0C0C;
+                color: #F6F4F4;
             }
 
         }
@@ -76,12 +78,22 @@
         }
 
         .BODY {
-            /* background-color: white; */
             border-radius: 10px;
-            line-height: 25px;
+            font-weight: 400;
+            line-height: 28px;
             letter-spacing: 0.3px;
-            font-size: 16px;
-            color: #1A1A1A;
+            font-size: 15px;
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .BODY {
+                border-radius: 10px;
+                font-weight: 400;
+                line-height: 29px;
+                letter-spacing: 0.3px;
+                font-size: 15px;
+            }
         }
 
         .logo {
@@ -102,7 +114,7 @@
 
         @media screen and (min-width: 600px) {
             .first {
-                width: 70%;
+                width: 85%;
             }
         }
 
@@ -167,7 +179,7 @@
             border-radius: 40px;
             color: white;
             border-color: #E60A2B;
-
+            font-size: 15px;
         }
 
 
@@ -358,7 +370,7 @@
                 line-height: 32px;
                 font-family: ClashGrotesk-600;
             }
-        
+
         }
     </style>
 </head>
