@@ -9,23 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: ClashGrotesk-600;
-            src: url(fonts/OTF/ClashGrotesk-Semibold.otf);
-        }
-
-        @font-face {
-            font-family: ClashGrotesk-500;
-            src: url(fonts/OTF/ClashGrotesk-Medium.otf);
-        }
-
-        @font-face {
-            font-family: ClashGrotesk-400;
-            src: url(fonts/OTF/ClashGrotesk-Regular.otf);
-        }
-
-
         :root {
             color-scheme: light dark;
         }
@@ -76,13 +63,13 @@
 
         .names {
             font-size: 18px;
-            font-family: ClashGrotesk-500;
+            font-family: 'DM Sans', sans-serif;
         }
 
 
         @media screen and (min-width: 600px) {
             .names {
-                font-family: ClashGrotesk-500;
+                font-family: 'DM Sans', sans-serif;
                 font-size: 22px;
             }
         }
@@ -113,7 +100,7 @@
         }
 
         .BODY {
-            border-radius: 10px;
+            border-radius: 14px 14px 30px 30px;
             font-weight: 400;
             line-height: 28px;
             letter-spacing: 0.3px;
@@ -123,7 +110,7 @@
 
         @media screen and (min-width: 600px) {
             .BODY {
-                border-radius: 10px;
+                border-radius: 14px 14px 30px 30px;
                 font-weight: 400;
                 line-height: 29px;
                 letter-spacing: 0.3px;
@@ -310,7 +297,7 @@
         @media screen and (prefers-color-scheme: light) {
             .tablee {
                 box-shadow: inset 0px 4px 14px #35313556;
-                border-radius: 10px;
+             border-radius: 14px 14px 30px 30px;
                 padding: 7px;
                 width: 97%;
             }
@@ -320,7 +307,7 @@
         @media screen and (prefers-color-scheme: dark) {
             .tablee {
                 box-shadow: inset 0px 4px 14px #0A0A0A;
-                border-radius: 10px;
+             border-radius: 14px 14px 30px 30px;
                 padding: 7px;
                 width: 97%;
             }
@@ -348,7 +335,7 @@
         @media screen and (prefers-color-scheme: light) {
             .fc_team {
                 color: #645E5F;
-                font-family: ClashGrotesk-500;
+                font-family: 'DM Sans', sans-serif;
             }
 
         }
@@ -357,7 +344,7 @@
         @media screen and (prefers-color-scheme: dark) {
             .fc_team {
                 color: #A59292;
-                font-family: ClashGrotesk-500;
+                font-family: 'DM Sans', sans-serif;
             }
 
         }
@@ -376,9 +363,10 @@
 
         @media screen and (prefers-color-scheme: light) {
             .last_table {
+                border-radius: 14px 14px 30px 30px;
                 background-color: #F7F7F8;
-                border-bottom: 6px solid #F73B58;
-                font-family: ClashGrotesk-400;
+                border-bottom: 14px solid #F73B58;
+                font-family: 'DM Sans', sans-serif;
             }
 
         }
@@ -386,9 +374,10 @@
 
         @media screen and (prefers-color-scheme: dark) {
             .last_table {
+                border-radius: 14px 14px 30px 30px;
                 background-color: #181616;
-                font-family: ClashGrotesk-500;
-                border-bottom: 6px solid #F73B58;
+                font-family: 'DM Sans', sans-serif;
+                border-bottom: 14px solid #EC2745;
             }
 
         }
@@ -438,7 +427,7 @@
         @media screen and (prefers-color-scheme: light) {
             #order {
                 color: #423E3F;
-                font-family: ClashGrotesk-400;
+                font-family: 'DM Sans', sans-serif;
             }
 
         }
@@ -447,7 +436,7 @@
         @media screen and (prefers-color-scheme: dark) {
             #order {
                 color: #CBCBD2;
-                font-family: ClashGrotesk-400;
+                font-family: 'DM Sans', sans-serif;
             }
         }
     </style>
@@ -493,7 +482,8 @@
                                                     successfully completed.
                                                 </p>
 
-                                                <p id="order"> <span style="color: red; font-family: ClashGrotesk-500;"
+                                                <p id="order"> <span
+                                                        style="color: red; font-family: 'DM Sans', sans-serif;"
                                                         id="Amount_paid">{{Amount_paid}} </span>
                                                     <span style="color: #858585;"> was charged for your meal</span>
                                                 </p>
@@ -509,7 +499,7 @@
                                             <tr>
                                                 <td>
                                                     <p
-                                                        style="font-weight: 500; color: #858585; font-family: ClashGrotesk-500;">
+                                                        style="font-weight: 500; color: #858585; font-family: 'DM Sans', sans-serif;">
                                                         Transaction Details
                                                     </p>
                                                     <p style="font-weight: 500;">{{foodbrand}}</p>
@@ -553,7 +543,7 @@
 
                                                     <table class="second-column">
                                                         <tr>
-                                                           
+
 
 
                                                             <td style="display: block;">
@@ -657,7 +647,7 @@
             </tr>
 
 
-            <table class="last_table" style="border-radius: 10px; width: 100%;">
+            <table class="last_table" style=" width: 100%;">
 
 
                 <tr>
