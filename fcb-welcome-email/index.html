@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer who orders from the same place and doesn’t explore other restaurants.</title>
+    <title>Welcome Email for Employees Added to FC Business</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
@@ -172,8 +172,6 @@
                 gap: 20px;
             }
         }
-
-
 
         button {
             background-color: #E60A2B;
@@ -391,6 +389,10 @@
                 font-family: 'DM Sans', sans-serif;
             }
         }
+
+        #centralize {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -426,7 +428,7 @@
                                         <tr>
                                             <td class="text">
                                                 <h2 class="title">
-                                                    Shake Things Up, Foodie Adventurer! Discover New Flavors Today! 🌮🌟
+                                                 Welcome to FC Business, [Employee Name]!
                                                 </h2>
                                             </td>
                                         </tr>
@@ -441,47 +443,23 @@
                                 <center class="wrapper">
                                     <table class="widthh">
                                         <tr>
-                                            <td class="image">
-
-
-                                                <picture class="cloud">
-                                                    <source
-                                                        srcset="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1692175680/Shake_Things_Up_kirh2b.jpg"
-                                                        media="(min-width: 600px)">
-                                                    <img class="cloud"
-                                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1692175680/Shake_Things_Up_kirh2b.jpg">
-                                                </picture>
-
-
-                                            </td>
-                                        </tr>
-
-
-
-                                    </table>
-                                </center>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td>
-                                <center class="wrapper">
-                                    <table class="widthh">
-                                        <tr>
                                             <td>
-                                                <p class="collins">Hey {{customerName}},</p>
-                                                <p> 
-                                                    We've noticed you're the master of consistency, while we appreciate your unwavering love for that one dish that never disappoints, we're here to tempt your palate with a tantalizing question: What if there's something even more extraordinary just a few taps away? Picture yourself savoring a new cuisine, indulging in unexpected flavors, and uncovering hidden gems that'll make your taste buds sing with joy.
+                                                <p id="centralize" class="collins">Dear {{Employee Name}},</p>
+                                                <p id="centralize"> 
+                                                   We are thrilled to welcome you to FC Business🎉, your one-stop platform for seamless company budget management, event planning, gifting, and more! 😎<br/> <br/>
+                                                   Your account has been successfully created, and you're now part of our growing FC Business community. Here's what you can look forward to🤸🏽:<br/> <br/>
+                                                       1. Efficiently manage budgets and durations for delightful food orders.✅ <br/>
+                                                       2. Plan and host virtual events with ease✅. <br/>
+                                                       3. Celebrate special occasions by sending thoughtful gifts to your colleagues🎉🎁.<br/> <br/>
+                                                   To get started, simply log in to your account using your credentials and explore the exciting features we offer. Should you have any questions or need assistance, our support team is here to help. <br/> <br/>
+                                                   Thank you for joining FC Business. We're excited to have you on board!🎉
 
-                                                    So, let's shake things up, foodie adventurer! Take a leap of taste and explore the diverse food wonders that FoodCourt has to offer. From sizzling street food to gourmet delights, our app is a treasure pot of flavor waiting to be explored. Don't let your cravings be confined to the familiar – let them roam free and ignite your taste buds in ways you've never imagined.
+                                        
                                                     
-                                                      
                                                 </p>
 
-                                                <p class="fc_team">With love,<br>
-                                                    <span class="fc_team">Team
-                                                        FoodCourt❤</span>
+                                                <p id="centralize" class="fc_team">Best Regards,🤓<br>
+                                                    <span class="fc_team">FoodCourt Business Team</span>
                                                 </p>
 
                                             </td>
@@ -493,23 +471,6 @@
                             </td>
                         </tr>
 
-
-                        <tr>
-                            <td align="center" style='text-align:center; padding-top: 54px; padding-bottom: 48px;'>
-                                <center class="wrapper">
-                                    <table class="btn_width" align="center" style='text-align:center' border="0"
-                                        cellspacing="0" cellpadding="0">
-                                        <tr>
-                                            <td class="btn_width" align="center" style='text-align:center'>
-                                                <a href="https://onelink.to/foodcourtapp">
-                                                    <button>Open your App</button>
-                                                  </a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </center>
-                            </td>
-                        </tr>
 
 
                         <table class="last_table" style="width: 100%;">
@@ -521,6 +482,7 @@
                                             cellspacing="0" cellpadding="0">
                                             <tr>
                                                 <td align="center" class="icons" style="text-align: center;">
+
 
                                                     <picture class="icon">
                                                         <source class="photo"
@@ -620,7 +582,7 @@
 
                                                     <p class="P_tag" id="center_two">
                                                         Want to change how you recieve these emails? Tap <a
-                                                                href="emails.getfoodcourt.com/preferences?email={{email}}"><u>here</u> </a>
+                                                                href="https://emails.getfoodcourt.com/preferences?email={{email}}"><u>here</u> </a>
 
  
 
