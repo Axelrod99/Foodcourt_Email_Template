@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Verification Email Sent to Employees When Added to FC Business
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #564e4f;
+        }
+
+        p,
+        h2 {
+          color: #f6f4f4;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: light) {
+        p {
+          color: #141414;
+        }
+
+        body {
+          background-color: #fef0f2;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: light) {
+        .BODY {
+          background-color: #ffffff;
+          border-radius: 14px 14px 30px 30px;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0.3px;
+          font-size: 15px;
+          color: #1a1a1a;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        .BODY {
+          background-color: #0d0c0c;
+          border-radius: 14px 14px 30px 30px;
+          font-weight: 400;
+          letter-spacing: 0.3px;
+          font-size: 15px;
+          color: #f6f4f4;
+        }
+      }
+
+      .BODY {
+        border-radius: 14px 14px 30px 30px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        font-size: 15px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .BODY {
+          border-radius: 14px 14px 30px 30px;
+          font-weight: 400;
+          line-height: 29px;
+          letter-spacing: 0.3px;
+          font-size: 15px;
+        }
+      }
+
+      .main_body {
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+      }
+
+      .logo {
+        text-align: center;
+        color: #e60a2b;
+        font-size: larger;
+        font-weight: bolder;
+      }
+
+      .the_logo {
+        padding: 20px;
+      }
+
+      .firstt {
+        width: 95%;
+        padding-top: 10px;
+      }
+
+      .first {
+        padding-bottom: 50px;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 600px) {
+        .first {
+          width: 85%;
+        }
+      }
+
+      .container {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+      }
+
+      .image {
+        display: flex;
+        justify-content: center;
+      }
+
+      .icons {
+        padding: 10px;
+      }
+
+      .icon {
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .icon {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      .photo {
+        height: 25px;
+        width: 25px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .photo {
+          height: 30px;
+          width: 30px;
+        }
+      }
+
+      .flex {
+        display: flex;
+        gap: 8px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .flex {
+          gap: 20px;
+        }
+      }
+
+      button {
+        background-color: #e60a2b;
+        height: 54px;
+        width: 95%;
+        border-radius: 40px;
+        color: white;
+        border: 0;
+        font-size: 15px;
+      }
+
+      .P_tag {
+        color: #595959;
+        font-size: 12px;
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        .P_tag {
+          color: #ffffff 85%;
+          font-size: 12px;
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        .P_tag {
+          color: #595959;
+          font-size: 14px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .widthh {
+        width: 95%;
+      }
+
+      @media screen and (min-width: 600px) {
+        .widthh {
+          width: 95%;
+        }
+      }
+
+      .btn_width {
+        width: 95%;
+      }
+
+      @media screen and (min-width: 600px) {
+        .btn_width {
+          width: 85%;
+        }
+      }
+
+      span {
+        font-weight: 600;
+      }
+
+      a {
+        color: #595959;
+      }
+
+      @media screen and (min-width: 600px) {
+        #center {
+          width: 65%;
+          margin: auto;
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        #center_two {
+          width: 95%;
+          margin: auto;
+        }
+      }
+
+      .cloud {
+        width: 100%;
+      }
+
+      .text {
+        font-size: 10px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .text {
+          font-size: 18px;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: light) {
+        .fc_team {
+          color: #645e5f;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 500;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        .fc_team {
+          color: #a59292;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 500;
+        }
+      }
+
+      .fc_team {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      @media screen and (min-width: 600px) {
+        .fc_team {
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: light) {
+        .last_table {
+          background-color: #f7f7f8;
+          border-bottom: 14px solid #f73b58;
+          border-radius: 14px 14px 30px 30px;
+          font-family: "DM Sans", sans-serif;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        .last_table {
+          background-color: #181616;
+          font-family: "DM Sans", sans-serif;
+          border-bottom: 14px solid #ec2745;
+          border-radius: 14px 14px 30px 30px;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: light) {
+        .last_table p,
+        span,
+        .P_tag,
+        a {
+          color: #645e5f;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        .last_table p,
+        span,
+        .P_tag,
+        a {
+          color: #ffffff;
+        }
+      }
+
+      .collins {
+        font-weight: 500;
+        font-family: "DM Sans", sans-serif;
+        color: #645e5f;
+        font-size: 18px;
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        .collins {
+          font-weight: 500;
+          font-family: "DM Sans", sans-serif;
+          color: #a59292;
+        }
+      }
+
+      @media screen and (prefers-color-scheme: light) {
+        .collins {
+          font-weight: 500;
+          font-family: "DM Sans", sans-serif;
+          color: #645e5f;
+        }
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 22px;
+        font-family: "DM Sans", sans-serif;
+        color: #242424;
+        line-height: 32px;
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        .title {
+          color: #ffffff;
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        .title {
+          font-size: 26px;
+          line-height: 32px;
+          font-family: "DM Sans", sans-serif;
+        }
+      }
+
+      #centralize {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="main_body">
+    <center class="wrapper">
+      <table class="first">
+        <tr>
+          <td>
+            <table width="100%" class="logo">
+              <tr>
+                <td class="the_logo">
+                  <img
+                    src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/the_logo_utj3nt.png"
+                    alt=""
+                    width=""
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="BODY">
+            <table class="first_table" width="100%">
+              <tr>
+                <td>
+                  <center class="wrapper">
+                    <table class="firstt">
+                      <tr>
+                        <td class="text">
+                          <h2 class="title">
+                            Verify Your FoodCourt Business Account ✅
+                          </h2>
+                        </td>
+                      </tr>
+                    </table>
+                  </center>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <center class="wrapper">
+                    <table class="widthh">
+                      <tr>
+                        <td>
+                          <p id="centralize" class="collins">
+                            Dear [Employee Name],
+                          </p>
+                          <p id="centralize">
+                            You've been added as a member of [Company Name]'s FC
+                            Business account 🥳. To ensure the security of your
+                            account, please verify your email address by
+                            clicking the link below👇🏾:
+                          </p>
+                          <button>Verify Email</button>
+                          <p id="centralize">
+                            Once verified, you'll gain access to all the
+                            features and benefits of FC 🎉
+                          </p>
+                          <p id="centralize" class="fc_team">
+                            Best Regards,🤓<br />
+                            <span class="fc_team">FoodCourt Business Team</span>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </center>
+                </td>
+              </tr>
+
+              <table class="last_table" style="width: 100%">
+                <tr>
+                  <td align="center" style="padding-top: 20px">
+                    <center class="wrapper">
+                      <table
+                        class="widthh"
+                        align="center"
+                        style="text-align: center"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            class="icons"
+                            style="text-align: center"
+                          >
+                            <picture class="icon">
+                              <source
+                                class="photo"
+                                srcset="
+                                  https://res.cloudinary.com/dj0ex8nyv/image/upload/v1674731183/Group_8463_mnzrgq.png
+                                "
+                                media="(prefers-color-scheme:dark)"
+                              />
+                              <a href="Hello@getfoodcourt.com"
+                                ><img
+                                  class="photo"
+                                  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/email_egtqux.png"
+                              /></a>
+                            </picture>
+
+                            <picture class="icon">
+                              <source
+                                class="photo"
+                                srcset="
+                                  https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_7_kdfymg.png
+                                "
+                                media="(prefers-color-scheme:dark)"
+                              />
+                              <a
+                                href="https://instagram.com/foodcourt_app?igshid=MzRlODBiNWFlZA=="
+                                ><img
+                                  class="photo"
+                                  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/instagram_feyiby.png"
+                              /></a>
+                            </picture>
+
+                            <picture class="icon">
+                              <source
+                                class="photo"
+                                srcset="
+                                  https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_6_guyevb.png
+                                "
+                                media="(prefers-color-scheme:dark)"
+                              />
+                              <a href="https://web.facebook.com/getfoodcourt"
+                                ><img
+                                  class="photo"
+                                  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/facebook_golxts.png"
+                              /></a>
+                            </picture>
+
+                            <picture class="icon">
+                              <source
+                                class="photo"
+                                srcset="
+                                  https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_2_vxts5i.png
+                                "
+                                media="(prefers-color-scheme:dark)"
+                              />
+                              <a
+                                href="https://x.com/foodcourt_app?s=21&t=72hIJ_rZcQRJACT2lCJBIw"
+                                ><img
+                                  class="photo"
+                                  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/twitter_dhbecf.png"
+                              /></a>
+                            </picture>
+
+                            <picture class="icon">
+                              <source
+                                class="photo"
+                                srcset="
+                                  https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_4_gmers3.png
+                                "
+                                media="(prefers-color-scheme:dark)"
+                              />
+                              <a
+                                href="https://www.linkedin.com/mwlite/company/joinco-kitchen"
+                              >
+                                <img
+                                  class="photo"
+                                  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/linked_ofmjt1.png"
+                              /></a>
+                            </picture>
+
+                            <picture class="icon">
+                              <source
+                                class="photo"
+                                srcset="
+                                  https://res.cloudinary.com/dj0ex8nyv/image/upload/v1673650222/Group_3_lapo1e.png
+                                "
+                                media="(prefers-color-scheme:dark)"
+                              />
+                              <a
+                                href="https://www.tiktok.com/@foodcourt_app?_t=8etMy4U0GE1&_r=1"
+                              >
+                                <img
+                                  class="photo"
+                                  src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1672215967/tiktok_pglsow.png"
+                              /></a>
+                            </picture>
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    align="center"
+                    style="text-align: center; padding-bottom: 40px"
+                  >
+                    <center class="wrapper" id="center">
+                      <table
+                        width="90%"
+                        align="center"
+                        style="text-align: center"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                      >
+                        <tr>
+                          <td align="center" style="text-align: center">
+                            <p class="P_tag">
+                              Copyright © {{date}} Cokitchen Technologies, All
+                              rights reserved.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="text-align: center">
+                            <p class="P_tag" id="center_two">
+                              Want to change how you receive these emails? Tap
+                              <a
+                                href="https://emails.getfoodcourt.com/preferences?email={{email}}"
+                                ><u>here</u></a
+                              >
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
+                  </td>
+                </tr>
+              </table>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
